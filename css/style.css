@@ -64,10 +64,37 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
+/* MAIN STYLES */
 
+body {
+	background: url('../img/bg.png');
+}
 
+header {
+	background: url('../img/header.png');
+}
 
+header h1 {
+	margin: 0;
+	color: #fff;
+	width: 400px;
+	padding: 15px 50px;
+}
 
+nav {
+	float: right;
+	margin-top: -45px;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
 
 
 
