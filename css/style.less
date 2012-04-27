@@ -73,6 +73,8 @@ td { vertical-align: top; }
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
+@iPhoneWidth: 480px;
+
 body{ font:16px/26px Helvetica, Helvetica Neue, Arial; background: url('../img/bg.png'); }
 
 .wrapper{
@@ -84,9 +86,7 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; background: url('../img/b
     ALL: Orange Theme
    =================== */
 
-#header-container,
-#footer-container,
-#main aside{
+#header-container, #footer-container, #main aside{
 	background: url('../img/header.png');
 }
 
@@ -96,34 +96,26 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; background: url('../img/b
     MOBILE: Menu
    ============== */
 
-nav a{
-	display:block;
-	margin-bottom:10px;
-	padding:15px 0;
-	
+nav{
+	a{
+		display:block;
+		margin-bottom:10px;
+		padding:15px 0;
+		color:white;
+		text-align:center;
+		text-decoration:none;
+		font-weight:bold;
 
-/*	border: 1px solid #333;*/
-	color:white;
+		&:hover, &:visited{
+			color:white;
+		}
 
-	text-align:center;
-	text-decoration:none;
-	font-weight:bold;
-
-	h1{
-		@media screen and (max-width:940px) {
-			width: auto;
+		&:hover{
+			background-color: rgba(40, 114, 189, 0.68);
 		}
 	}
-
 }
 
-nav a:hover, nav a:visited{
-	color:white;
-}
-
-nav a:hover{
-	background-color: rgba(40, 114, 189, 0.68);
-}
 
 /* ==============
     MOBILE: Main
@@ -131,28 +123,28 @@ nav a:hover{
 
 #main{
 /*	padding:30px 0;
-*/}
+*/
+	h1{
+		font-size:2em;
+	}
 
-#main article h1{
-	font-size:2em;
+	aside{
+		color:white;
+		padding:0px 5% 10px;
+	}
+
+	img{
+		display: block;
+		margin: 0 auto;
+	}
 }
 
-#main aside{
-	color:white;
-	padding:0px 5% 10px;
+#footer-container{
+	footer{
+		color:white;
+		padding:20px 0;
+	}
 }
-
-#main img{
-	display: block;
-	margin: 0 auto;
-}
-
-#footer-container footer{
-	color:white;
-	padding:20px 0;
-}
-
-
 
 /* ===============
     ALL: IE Fixes
@@ -165,51 +157,50 @@ nav a:hover{
    Author: Integral Studios
    ========================================================================== */
 
+footer{
+	ul{
+		margin: 0;
+		padding: 0;
 
-footer ul{
-	margin: 0;
-	padding: 0;
+		li{
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+
+			&:nth-child(1){
+				background: url('../img/social.png') no-repeat 0 0;
+				width: 34px;
+				height: 34px;
+			}
+
+			&:nth-child(2){
+				background: url('../img/social.png') no-repeat -42px 0;
+				width: 34px;
+				height: 34px;
+			}
+
+			&:nth-child(3){
+				background: url('../img/social.png') no-repeat -86px 0;
+				width: 34px;
+				height: 34px;
+			}
+
+			&:nth-child(4){
+				background: url('../img/social.png') no-repeat -128px 0;
+				width: 34px;
+				height: 34px;
+			}
+			a{
+				display: block;
+				width:34px;
+				height:34px;
+
+				@media only screen and (min-width: @iPhoneWidth) {
+				}
+			}
+		}
+	}
 }
-footer ul li{
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-}
-footer ul li:nth-child(1){
-	background: url('../img/social.png') no-repeat 0 0;
-	width: 34px;
-	height: 34px;
-}
-
-footer ul li:nth-child(2){
-	background: url('../img/social.png') no-repeat -42px 0;
-	width: 34px;
-	height: 34px;
-}
-
-footer ul li:nth-child(3){
-	background: url('../img/social.png') no-repeat -86px 0;
-	width: 34px;
-	height: 34px;
-}
-
-footer ul li:nth-child(4){
-	background: url('../img/social.png') no-repeat -128px 0;
-	width: 34px;
-	height: 34px;
-}
-
-footer ul li a{
-	display: block;
-	width:34px;
-	height:34px;
-}
-
-
-
-
-
-
 
 
 /* =============================================================================
