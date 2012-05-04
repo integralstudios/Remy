@@ -401,7 +401,7 @@ footer ul li a {
   #main aside {
     -webkit-box-shadow: 0 5px 10px #aaa;
     -moz-box-shadow: 0 5px 10px #aaa;
-    box-shadow: 0 5px 10px #aaa;
+    box-shadow: 0 1px 1px #8c8c8c;
   }
   /* ============
       WIDE: Menu
