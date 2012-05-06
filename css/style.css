@@ -400,8 +400,8 @@ footer ul li a {
   #header-container,
   #main aside {
     -webkit-box-shadow: 0 5px 10px #aaa;
-    -moz-box-shadow: 0 5px 10px #aaa;
-    box-shadow: 0 5px 10px #aaa;
+    -moz-box-shadow: 01px 1px #aaa;
+    box-shadow: 0 2px 2px #999;
   }
   /* ============
       WIDE: Menu
