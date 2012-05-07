@@ -97,6 +97,26 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; background: url('../img/b
    ============== */
 
 nav{
+	#a{
+		background: url('../img/icons.png') no-repeat 0 0;
+		width: 62px;
+		height: 73px;
+	}
+	#b{
+		background: url('../img/icons.png') no-repeat -200px -21px;
+		width: 63px;
+		height: 52px;
+	}
+	#c{
+		background: url('../img/icons.png') no-repeat -406px -18px;
+		width: 62px;
+		height: 55px;
+	}
+	#d{
+		background: url('../img/icons.png') no-repeat -611px -31px;
+		width: 62px;
+		height: 42px;
+	}
 	a{
 		display:block;
 		margin-bottom:10px;
@@ -156,6 +176,54 @@ nav{
 /* ===== Primary Styles ========================================================
    Author: Integral Studios
    ========================================================================== */
+#tumblr{
+	ol{
+		padding-left: 0;
+
+		li{
+			list-style: none;
+
+			&:nth-child(odd){
+				background-color: red;
+			}
+
+			&:nth-child(even){
+				background-color: grey;
+			}
+		}
+
+		p{
+			margin-top: 0;
+		}
+
+		.tumblr_title{
+			margin-top: 20px;
+			text-transform: uppercase;
+		}
+
+		.tumblr_video{
+			iframe{
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		.tumblr_caption{
+			p{
+				font-style: italic;
+				margin-left: 90px;
+			}
+		}
+
+		.tumblr_source{
+			font-style: italic;
+
+			&:before{
+				content: "-";
+			}
+		}
+	}
+}
 
 footer{
 	ul{
