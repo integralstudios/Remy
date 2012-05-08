@@ -276,6 +276,7 @@ body {
 /* ==============
     MOBILE: Menu
    ============== */
+<<<<<<< HEAD
 nav #a {
   background: url('../img/icons.png') no-repeat 0 0;
   width: 62px;
@@ -295,6 +296,20 @@ nav #d {
   background: url('../img/icons.png') no-repeat -611px -31px;
   width: 62px;
   height: 42px;
+=======
+nav ul li {
+  position: relative;
+  border: 1px solid red;
+}
+nav ul li ul#about {
+  display: none;
+}
+nav ul li ul#about:hover {
+  display: block;
+}
+nav ul li ul#about li {
+  width: auto;
+>>>>>>> mobile menu
 }
 nav a {
   display: block;
