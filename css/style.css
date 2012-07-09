@@ -270,6 +270,10 @@ td {
 /* ===== Initializr Styles =====================================================
 	 Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
 	 ========================================================================== */
+img {
+  display: none;
+}
+
 @font-face {
   font-family: BreeSerif;
   src: url(../fonts/BreeSerif_Reg.otf);
@@ -356,99 +360,95 @@ body {
 }
 
 #picture {
-  display: none;
+  height: 0;
 }
 
 #main-container {
   background: url("../img/pattern.png") repeat-x 0 0;
   padding: 0px 5%;
+  /* eo main */
 }
 #main-container #main {
   background-color: #FFF;
   box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
   font-family: Century_Gothic;
+  /* eo aside */
 }
-#main-container #main img {
-  margin: 20px 40px;
+#main-container #main article {
+  margin: 0 20px;
 }
-#main-container #main section {
-  margin: 0 40px;
-}
-#main-container #main section h1 {
+#main-container #main article h1 {
   font-family: BreeSerif;
   font-size: 1.5em;
   color: #4090ce;
   margin: 0px;
 }
-#main-container #main section img {
-  display: block;
+#main-container #main article img {
   margin: 0 auto;
 }
-
-aside {
+#main-container #main aside {
   color: white;
-  padding: 0px 5% 10px;
+  /* eo ul */
+  /* eo section#feed */
 }
-aside ul {
+#main-container #main aside ul {
   margin: 0;
   padding: 5%;
 }
-aside ul li {
+#main-container #main aside ul li {
   display: inline-block;
   margin: 0;
   padding: 0;
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-aside ul li:hover {
+#main-container #main aside ul li:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-aside ul li:nth-child(1) {
+#main-container #main aside ul li:nth-child(1) {
   background: url("../img/social.png") no-repeat 0 0;
   width: 34px;
   height: 34px;
 }
-aside ul li:nth-child(2) {
+#main-container #main aside ul li:nth-child(2) {
   background: url("../img/social.png") no-repeat -42px 0;
   width: 34px;
   height: 34px;
 }
-aside ul li:nth-child(3) {
+#main-container #main aside ul li:nth-child(3) {
   background: url("../img/social.png") no-repeat -86px 0;
   width: 34px;
   height: 34px;
 }
-aside ul li:nth-child(4) {
+#main-container #main aside ul li:nth-child(4) {
   background: url("../img/social.png") no-repeat -128px 0;
   width: 34px;
   height: 34px;
 }
-aside ul li a {
+#main-container #main aside ul li a {
   display: block;
   width: 34px;
   height: 34px;
 }
-aside h3 {
+#main-container #main aside h3 {
   background: url("../img/header.png");
   color: white;
   padding: 0 0 0 20px;
   margin: 0;
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
 }
-aside section#feed {
+#main-container #main aside section#feed {
   background-color: #FFF;
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
   color: black;
-  padding: 5%;
 }
-aside section#feed h2 {
+#main-container #main aside section#feed article hgroup h2 {
   margin: 0 0 10px 0;
 }
 
+/* eo main-contianer */
 #footer-container footer {
   color: white;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 10px 20px;
 }
 
 /* ===============
@@ -463,9 +463,6 @@ aside section#feed h2 {
 }
 #tumblr ol li {
   list-style: none;
-}
-#tumblr ol li img, #tumblr ol li iframe {
-  width: 100%;
 }
 #tumblr ol p {
   margin-top: 0;
@@ -526,13 +523,12 @@ aside section#feed h2 {
   #main-container {
     padding-top: 60px;
   }
+  #main-container article {
+    width: 501px;
+  }
 
   #main img {
     margin: 20px 0px 40px 0px;
-  }
-
-  #picture {
-    display: none;
   }
 
   /* ========================
@@ -563,13 +559,16 @@ aside section#feed h2 {
 
   #picture {
     padding: 60px 0 0 0;
-    display: block;
     width: 100%;
+    height: 250px;
     background: url("../img/pattern-bg.png") repeat 0 0;
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
   }
   #picture img {
     margin: 0 auto;
-    display: block;
     height: 250px;
   }
 
@@ -593,12 +592,11 @@ aside section#feed h2 {
 
   #main article {
     float: left;
-    width: 70%;
   }
 
   aside {
     float: right;
-    width: 28%;
+    width: 155px;
     margin-top: 20px;
   }
 
