@@ -462,6 +462,8 @@ body {
       #main-container article #jongvld {
         display: block;
         float: right; }
+      #main-container article #postit {
+        margin-bottom: 20px; }
       #main-container article .postit {
         display: inline-block;
         width: 49%; }
