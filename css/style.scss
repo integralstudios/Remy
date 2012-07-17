@@ -259,6 +259,20 @@ body{
 					}
 				}
 			}
+			
+			.postit{
+				margin: 0 auto;
+				//border: 1px solid red;
+				box-shadow: 0 8px 6px -6px rgba(0,0,0,.5);
+				
+				h3{
+					background: rgb(1, 142, 194);
+					margin-top: 0;
+					padding: 10px 0;
+					color: white;
+					text-align: center;
+				}
+			}
 		}
 
 		aside{
@@ -510,6 +524,19 @@ footer{
 
 		article{
 			width: 501px;
+			
+			#verkiezing-tekst{
+				width: 45%;
+			}
+			#jongvld{
+				display: block;
+				float: right;
+			}
+			
+			.postit{
+				display: inline-block;
+				width: 49%;
+			}
 		}
 
 		aside{
