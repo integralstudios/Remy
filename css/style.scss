@@ -129,10 +129,12 @@ body{
 				display: block;
 				font-family: Century_Gothic_Bold;
 				text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+				font-size: 20px;
 
 				a{
 					text-decoration: none;
 					color: white;
+					z-index: -96;
 				}
 			}
 			nav{
@@ -178,6 +180,15 @@ body{
 						background: url('../img/icons.png') no-repeat -352px 5px;
 					}
 				}
+
+				select{
+					display: none;
+					width: 280px;
+
+					option{
+						
+					}
+				}
 			}
 		}
 	}
@@ -201,7 +212,6 @@ body{
 	min-height: 100%;
 	padding-bottom: 80px;
 
-
 	#main{
 		background-color: #FFF;
 		// border-left: 1px solid #999;
@@ -211,14 +221,9 @@ body{
 		font-weight: lighter;
 		font-size: 14px;
 
-		// img{
-		// 	margin: 20px 40px;
-		// }
-
 		article{
 			margin: 0 0 0 20px;
 			padding: 20px 0 0 0;
-
 
 			h1{
 				font-family: BreeSerif;
@@ -394,6 +399,7 @@ body{
 			iframe{
 				display: block;
 				margin: 0 auto;
+				width: 240px;
 			}
 		}
 
@@ -419,6 +425,19 @@ footer{
 	// bottom: 0;
 	// height: 82px;
 }
+
+
+@media (max-width: 480px) {
+
+	#header-container header div nav ul { 
+		display: none;
+	}
+	#header-container header div nav select { 
+		display: inline-block;
+	}
+
+}
+
 
 /* =============================================================================
 	 Media Queries
@@ -456,6 +475,7 @@ footer{
 				h1{
 					float: left;
 					width: 50%;
+					font-size: 32px;
 				}
 
 				nav{
