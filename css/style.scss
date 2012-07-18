@@ -245,11 +245,36 @@ body{
 			&#contact{
 
 				p{
-					margin-left: 30px;
-
-					&:before{
-						background: url('../img/contact_sprite.png') no-repeat 0 0;
+					margin-left: 10px;
+					padding-left: 45px;
+					a{
+						text-decoration: none;
+						color: #222;
+						&:visited{
+							color: #222;
+						}
 					}
+				}
+				p:nth-child(1){
+					background: url(../img/contact_sprite.png) no-repeat 0 0;
+				}
+				p:nth-child(2){
+					background: url(../img/contact_sprite.png) no-repeat 0 -45px;
+				}
+				p:nth-child(3){
+					background: url(../img/contact_sprite.png) no-repeat 0 -84px;
+				}
+				p:nth-child(4){
+					background: url(../img/contact_sprite.png) no-repeat 0 -130px;
+				}
+				p:nth-child(5){
+					background: url(../img/contact_sprite.png) no-repeat 0 -172px;
+				}
+				p:nth-child(6){
+					background: url(../img/contact_sprite.png) no-repeat 0 -216px;
+				}
+				p:nth-child(7){
+					background: url(../img/contact_sprite.png) no-repeat 0 -259px;
 				}
 			}
 			
