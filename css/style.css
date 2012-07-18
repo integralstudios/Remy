@@ -237,23 +237,17 @@ body {
 .active {
   background-color: rgba(40, 114, 189, 0.68); }
 
-/* ===================
-		ALL: Orange Theme
-	 =================== */
 #header-container, #footer-container {
   background: url("../img/header.png"); }
 
-/* ==============
-		MOBILE
-	 ============== */
 #header-container header {
   width: 100%;
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25); }
   #header-container header div {
     padding: 0px 5%; }
     #header-container header div h1 {
+      margin: 5px 0 0 0;
       color: white;
-      margin: 22px 0 0 0;
       width: 100%;
       display: block;
       font-family: Century_Gothic_Bold;
@@ -263,34 +257,35 @@ body {
         text-decoration: none;
         color: white; }
     #header-container header div nav {
-      margin: 10px 0 0 0;
       width: 100%;
-      height: 60px;
-      display: block; }
-      #header-container header div nav ul li {
-        float: left;
-        width: 62px;
-        height: 60px;
-        margin: 0px 13px 0 0; }
-        #header-container header div nav ul li:last-child {
-          margin: 0; }
-      #header-container header div nav ul #a, #header-container header div nav ul #b, #header-container header div nav ul #c, #header-container header div nav ul #d {
-        display: block;
-        width: 62px;
-        height: 60px;
-        background-size: 400px; }
-        #header-container header div nav ul #a:hover, #header-container header div nav ul #a:visited, #header-container header div nav ul #b:hover, #header-container header div nav ul #b:visited, #header-container header div nav ul #c:hover, #header-container header div nav ul #c:visited, #header-container header div nav ul #d:hover, #header-container header div nav ul #d:visited {
-          color: white; }
-      #header-container header div nav ul #a {
-        background: url("../img/icons.png") no-repeat -108px 5px; }
-      #header-container header div nav ul #b {
-        background: url("../img/icons.png") no-repeat 12px 5px; }
-      #header-container header div nav ul #c {
-        background: url("../img/icons.png") no-repeat -230px 5px; }
-      #header-container header div nav ul #d {
-        background: url("../img/icons.png") no-repeat -352px 5px; }
-      #header-container header div nav select {
+      display: block;
+      height: 40px; }
+      #header-container header div nav ul {
         display: none; }
+        #header-container header div nav ul li {
+          float: left;
+          width: 62px;
+          height: 60px;
+          margin: 0px 13px 0 0; }
+          #header-container header div nav ul li:last-child {
+            margin: 0; }
+        #header-container header div nav ul #a, #header-container header div nav ul #b, #header-container header div nav ul #c, #header-container header div nav ul #d {
+          display: block;
+          width: 62px;
+          height: 60px;
+          background-size: 400px; }
+          #header-container header div nav ul #a:hover, #header-container header div nav ul #a:visited, #header-container header div nav ul #b:hover, #header-container header div nav ul #b:visited, #header-container header div nav ul #c:hover, #header-container header div nav ul #c:visited, #header-container header div nav ul #d:hover, #header-container header div nav ul #d:visited {
+            color: white; }
+        #header-container header div nav ul #a {
+          background: url("../img/icons.png") no-repeat -108px 5px; }
+        #header-container header div nav ul #b {
+          background: url("../img/icons.png") no-repeat 12px 5px; }
+        #header-container header div nav ul #c {
+          background: url("../img/icons.png") no-repeat -230px 5px; }
+        #header-container header div nav ul #d {
+          background: url("../img/icons.png") no-repeat -352px 5px; }
+      #header-container header div nav select {
+        display: inline-block; }
 
 #picture {
   height: 0; }
@@ -388,12 +383,6 @@ body {
     color: white;
     padding: 10px 0 10px 20px; }
 
-/* ===============
-		ALL: IE Fixes
-	 =============== */
-.ie7 #title {
-  padding-top: 20px; }
-
 #tumblr ol {
   padding-left: 0; }
   #tumblr ol li {
@@ -415,56 +404,49 @@ body {
     #tumblr ol .tumblr_source:before {
       content: "-"; }
 
-@media (max-width: 320px) {
-  #header-container header div h1 {
-    margin-top: 5px; }
-  #header-container header div nav {
-    height: 40px; }
-    #header-container header div nav ul {
-      display: none; }
-    #header-container header div nav select {
-      display: inline-block; } }
 @media (min-width: 321px) and (max-width: 480px) {
   #header-container header div h1 {
     float: left;
     width: 160px;
-    border: 1px solid red;
-    display: block; }
+    display: block;
+    margin-top: 10px; }
   #header-container header div nav {
-    margin-left: 165px; }
+    height: 35px;
+    float: right;
+    width: 225px; }
     #header-container header div nav ul {
       display: none; }
     #header-container header div nav select {
       display: inline-block; } }
-/* =============================================================================
-	 Media Queries
-	 ========================================================================== */
-@media only screen and (min-width: 600px) {
-  /* ====================
-  		INTERMEDIATE: Menu
-  	 ==================== */
+@media only screen and (min-width: 481px) {
   #header-container header {
     position: fixed;
     height: 60px;
     background: url("../img/header.png"); }
     #header-container header div h1 {
       float: left;
-      width: 50%;
-      font-size: 32px; }
+      width: 42%;
+      font-size: 24px;
+      margin: 20px 0 0 0; }
     #header-container header div nav {
       float: right;
       margin: 0px;
-      width: 248px; }
-      #header-container header div nav ul li {
-        float: left;
-        width: 62px;
-        height: 60px;
-        margin: 0; }
-        #header-container header div nav ul li:hover {
-          background-color: rgba(40, 114, 189, 0.68);
-          -webkit-transition-property: color, background;
-          -webkit-transition-duration: 0.3s, 0.3s;
-          -webkit-transition-timing-function: linear, ease-in-out; }
+      width: 248px;
+      height: 60px; }
+      #header-container header div nav ul {
+        display: block; }
+        #header-container header div nav ul li {
+          float: left;
+          width: 62px;
+          height: 60px;
+          margin: 0; }
+          #header-container header div nav ul li:hover {
+            background-color: rgba(40, 114, 189, 0.68);
+            -webkit-transition-property: color, background;
+            -webkit-transition-duration: 0.3s, 0.3s;
+            -webkit-transition-timing-function: linear, ease-in-out; }
+      #header-container header div nav select {
+        display: none; }
 
   #main-container {
     padding-top: 60px; }

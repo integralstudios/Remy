@@ -102,17 +102,9 @@ body{
 	background-color: rgba(40, 114, 189, 0.68);
 }
 
-/* ===================
-		ALL: Orange Theme
-	 =================== */
-
 #header-container, #footer-container{
 	background: url('../img/header.png');
 }
-
-/* ==============
-		MOBILE
-	 ============== */
 
 #header-container{
 	header{
@@ -123,8 +115,9 @@ body{
 			padding: 0px 5%;
 
 			h1{
+				margin: 5px 0 0 0;
 				color: white;
-				margin: 22px 0 0 0;
+				
 				width: 100%;
 				display: block;
 				font-family: Century_Gothic_Bold;
@@ -138,12 +131,13 @@ body{
 				}
 			}
 			nav{
-				margin: 10px 0 0 0;
+				
 				width: 100%;
-				height: 60px;
+				
 				display: block;
+				height: 40px;
 				ul{
-
+					display: none;
 					li{
 						float: left;
 						width: 62px;
@@ -182,8 +176,7 @@ body{
 				}
 
 				select{
-					display: none;
-					//width: 280px;
+					display: inline-block;
 
 					option{
 						
@@ -374,12 +367,6 @@ body{
 	}
 }
 
-/* ===============
-		ALL: IE Fixes
-	 =============== */
-
-.ie7 #title{ padding-top:20px; }
-
 #tumblr{
 	ol{
 		padding-left: 0;
@@ -444,18 +431,18 @@ footer{
 
 	#header-container header div {
 		h1{
-			margin-top: 5px;
+			
 		}
 
 		nav{
-			height: 40px;
+			
 
 			ul { 
-				display: none;
+				
 			}
 
 			select { 
-				display: inline-block;
+				
 			}
 		}
 	}
@@ -468,12 +455,15 @@ footer{
 		h1{
 			float: left;
 			width: 160px;
-			border: 1px solid red;
 			display: block;
+			margin-top: 10px;
 		}
 
 		nav{
-			margin-left: 165px;
+			//margin-left: 165px;
+			height: 35px;
+			float: right;
+			width: 225px;
 
 			ul {
 				display: none;
@@ -486,30 +476,11 @@ footer{
 	}
 }
 
-
-/* =============================================================================
-	 Media Queries
-	 ========================================================================== */
-
-@media only screen and (min-width: 600px) {
-
-/* ====================
-		INTERMEDIATE: Menu
-	 ==================== */
+@media only screen and (min-width: 481px) {
 	
-	// nav a{
-	// 	float:left;
-	// 	width:13%;
-	// 	padding:25px 3%;
-	// 	margin-bottom:0;
-	// }
-	
-	// nav li:first-child a{ margin-left:0;  }
-	// nav li:last-child  a{ margin-right:0; }
 	body{
 		//padding: 60px 0 0 0;
 	}
-
 
 	#header-container{
 
@@ -522,16 +493,20 @@ footer{
 
 				h1{
 					float: left;
-					width: 50%;
-					font-size: 32px;
+					width: 42%;
+					font-size: 24px;
+					margin: 20px 0 0 0;
+
 				}
 
 				nav{
 					float: right;
 					margin: 0px;
 					width: 248px;
+					height: 60px;
 
 					ul{
+						display: block;
 
 						li{
 							
@@ -547,6 +522,9 @@ footer{
 							}
 						}
 					}
+					select{
+						display: none;
+					}
 				}
 			}
 		}
@@ -554,7 +532,6 @@ footer{
 
 	#main-container{
 		padding-top: 60px;
-
 
 		article{
 			width: 501px;
@@ -611,11 +588,10 @@ footer{
 		WIDE: CSS3 Effects
 	 ==================== */
 
-
 	aside{
 		-webkit-box-shadow:0 5px 10px #aaa;
-		   -moz-box-shadow:0 5px 10px #aaa;
-				box-shadow:0 5px 10px #aaa;
+		-moz-box-shadow:0 5px 10px #aaa;
+		box-shadow:0 5px 10px #aaa;
 	}
 
 	#stroke{
@@ -629,16 +605,15 @@ footer{
 		width: 100%;
 		height: 250px;
 		background: url('../img/pattern-bg.png') repeat 0 0;
-					transition:all .2s linear; 
-			-o-transition:all .2s linear; 
-			-moz-transition:all .2s linear; 
-			-webkit-transition:all .2s linear;
+		transition:all .2s linear; 
+		-o-transition:all .2s linear; 
+		-moz-transition:all .2s linear; 
+		-webkit-transition:all .2s linear;
 
 		img{
 			margin: 0 auto;
 			display: block;
 			height: 250px;
-
 		}
 	}
 
