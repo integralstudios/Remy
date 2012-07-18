@@ -26,7 +26,7 @@ function parseTwitterResultJson(data, container) {
 		tweet_text = item.text; //tweet text
 		tweet_user = item.user; //tweet user
 		
-		console.log(tweet_created_at);
+		//console.log(tweet_created_at);
 		tweet_profile_image_url = tweet_user.profile_image_url; //user profile image
 		tweet_user_name = tweet_user.name; //user name;
 		tweet_user_screen_name = tweet_user.user_name; //user user_name;
@@ -86,28 +86,42 @@ $(document).ready(function(){
 
 $(function() {
 
-// Create the dropdown base
-$("<select />").appendTo("nav");
+	// Create the dropdown base
+	$("<select />").appendTo("nav");
 
-// Create default option "Go to..."
-// $("<option />", {
-//    "selected": "selected",
-//    "value"   : "",
-//    "href"	 : "index.html",
-//    "text"    : "Home"
-// }).appendTo("nav select");
+	// Create default option "Go to..."
+	// $("<option />", {
+	//    "selected": "selected",
+	//    "value"   : "",
+	//    "href"	 : "index.html",
+	//    "text"    : "Home"
+	// }).appendTo("nav select");
 
-// Populate dropdown with menu items
-$("nav a").each(function() {
- var el = $(this);
- $("<option />", {
-     "value"   : el.attr("href"),
-     "text"    : el.attr("option")
- }).appendTo("nav select");
-});
+	// Populate dropdown with menu items
+	$("nav a").each(function() {
 
-$("nav select").change(function() {
-  window.location = $(this).find("option:selected").val();
-});
+		console.log($(this).parent().attr('class'));
+		
+		if ( $(this).parent().attr('class') === 'active' ) {
+			console.log('true');
+			var el = $(this);
+			$("<option />", {
+				"value"   : el.attr("href"),
+				"text"    : el.attr("option")
+			}).attr("selected", "selected").appendTo("nav select");
+		} else {
+			console.log('false');
+			var el = $(this);
+			$("<option />", {
+				"value"   : el.attr("href"),
+				"text"    : el.attr("option")
+			}).appendTo("nav select");
+		}
+
+	});
+
+	$("nav select").change(function() {
+		window.location = $(this).find("option:selected").val();
+	});
 	
 });

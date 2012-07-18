@@ -261,8 +261,7 @@ body {
       font-size: 20px; }
       #header-container header div h1 a {
         text-decoration: none;
-        color: white;
-        z-index: -96; }
+        color: white; }
     #header-container header div nav {
       margin: 10px 0 0 0;
       width: 100%;
@@ -291,8 +290,7 @@ body {
       #header-container header div nav ul #d {
         background: url("../img/icons.png") no-repeat -352px 5px; }
       #header-container header div nav select {
-        display: none;
-        width: 280px; }
+        display: none; }
 
 #picture {
   height: 0; }
@@ -417,12 +415,27 @@ body {
     #tumblr ol .tumblr_source:before {
       content: "-"; }
 
-@media (max-width: 480px) {
-  #header-container header div nav ul {
-    display: none; }
-
-  #header-container header div nav select {
-    display: inline-block; } }
+@media (max-width: 320px) {
+  #header-container header div h1 {
+    margin-top: 5px; }
+  #header-container header div nav {
+    height: 40px; }
+    #header-container header div nav ul {
+      display: none; }
+    #header-container header div nav select {
+      display: inline-block; } }
+@media (min-width: 321px) and (max-width: 480px) {
+  #header-container header div h1 {
+    float: left;
+    width: 160px;
+    border: 1px solid red;
+    display: block; }
+  #header-container header div nav {
+    margin-left: 165px; }
+    #header-container header div nav ul {
+      display: none; }
+    #header-container header div nav select {
+      display: inline-block; } }
 /* =============================================================================
 	 Media Queries
 	 ========================================================================== */

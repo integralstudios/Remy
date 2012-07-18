@@ -134,7 +134,7 @@ body{
 				a{
 					text-decoration: none;
 					color: white;
-					z-index: -96;
+					//z-index: -96;
 				}
 			}
 			nav{
@@ -183,7 +183,7 @@ body{
 
 				select{
 					display: none;
-					width: 280px;
+					//width: 280px;
 
 					option{
 						
@@ -440,16 +440,50 @@ footer{
 	// height: 82px;
 }
 
+@media (max-width: 320px) {
 
-@media (max-width: 480px) {
+	#header-container header div {
+		h1{
+			margin-top: 5px;
+		}
 
-	#header-container header div nav ul { 
-		display: none;
+		nav{
+			height: 40px;
+
+			ul { 
+				display: none;
+			}
+
+			select { 
+				display: inline-block;
+			}
+		}
 	}
-	#header-container header div nav select { 
-		display: inline-block;
-	}
+}
 
+@media (min-width: 321px) and (max-width: 480px) {
+
+	#header-container header div {
+
+		h1{
+			float: left;
+			width: 160px;
+			border: 1px solid red;
+			display: block;
+		}
+
+		nav{
+			margin-left: 165px;
+
+			ul {
+				display: none;
+			}
+
+			select {
+				display: inline-block;
+			}
+		}
+	}
 }
 
 
