@@ -285,6 +285,7 @@ body {
         #header-container header div nav ul #d {
           background: url("../img/icons.png") no-repeat -352px 5px; }
       #header-container header div nav select {
+        margin-top: 5px;
         display: inline-block; }
 
 #picture {
@@ -302,9 +303,10 @@ body {
     font-family: Century_Gothic, Helvetica;
     font-weight: lighter;
     font-size: 14px;
+    /* eo article */
     /* eo aside */ }
     #main-container #main article {
-      margin: 0 0 0 20px;
+      margin: 0 20px 0 20px;
       padding: 20px 0 0 0; }
       #main-container #main article h1 {
         font-family: BreeSerif;
@@ -333,7 +335,8 @@ body {
       /* eo section#feed */ }
       #main-container #main aside ul {
         margin: 0;
-        padding: 5%; }
+        padding: 5%;
+        /* eo li */ }
         #main-container #main aside ul li {
           display: inline-block;
           margin: 0;
@@ -408,8 +411,7 @@ body {
   #header-container header div h1 {
     float: left;
     width: 160px;
-    display: block;
-    margin-top: 10px; }
+    display: block; }
   #header-container header div nav {
     height: 35px;
     float: right;
@@ -448,36 +450,34 @@ body {
       #header-container header div nav select {
         display: none; }
 
-  #main-container {
-    padding-top: 60px; }
-    #main-container article {
-      width: 501px; }
-      #main-container article #verkiezing-tekst {
-        width: 45%; }
-      #main-container article #jongvld {
-        display: block;
-        float: right; }
-      #main-container article #postit {
-        margin-bottom: 20px; }
-      #main-container article .postit {
-        display: inline-block;
-        width: 49%; }
+  #main-container #main article {
+    width: 100%; }
+    #main-container #main article#gemeenteraadsverkiezing {
+      margin-top: 60px; }
+    #main-container #main article#overmij {
+      margin-top: 60px; }
+    #main-container #main article#contact {
+      margin-top: 60px; }
+    #main-container #main article #verkiezing-tekst {
+      width: 45%; }
+    #main-container #main article #jongvld {
+      display: block;
+      float: right; }
+    #main-container #main article #postit {
+      margin-bottom: 20px; }
+    #main-container #main article .postit {
+      display: inline-block;
+      width: 47%; }
 
   #main img {
     margin: 20px 0px 40px 0px; }
 
-  /* ========================
-  		INTERMEDIATE: IE Fixes
-  	 ======================== */
   nav ul li {
     display: inline; }
 
   .oldie nav a {
     margin: 0 0.7%; } }
 @media only screen and (min-width: 768px) {
-  /* ====================
-  		WIDE: CSS3 Effects
-  	 ==================== */
   aside {
     -webkit-box-shadow: 0 5px 10px #aaa;
     -moz-box-shadow: 0 5px 10px #aaa;
@@ -501,35 +501,24 @@ body {
       display: block;
       height: 250px; }
 
-  /* ============
-  		WIDE: Menu
-  	 ============ */
   header {
     position: relative; }
 
   nav {
     width: 240px; }
 
-  /* ============
-  		WIDE: Main
-  	 ============ */
-  #main-container {
-    padding-top: 0; }
-    #main-container #main article {
-      float: left; }
-    #main-container aside {
-      float: right;
-      width: 24%;
-      margin-top: 20px; }
-      #main-container aside article {
-        width: 150px; }
+  #main-container #main article {
+    float: left; }
+  #main-container aside {
+    float: right;
+    width: 24%;
+    margin-top: 20px; }
+    #main-container aside article {
+      width: 150px; }
 
   #main img {
     display: inline-block; } }
 @media only screen and (min-width: 1140px) {
-  /* ===============
-  		Maximal Width
-  	 =============== */
   header div {
     width: 1026px; }
 

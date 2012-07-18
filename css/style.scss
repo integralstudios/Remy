@@ -107,6 +107,7 @@ body{
 }
 
 #header-container{
+
 	header{
 		width: 100%;
 		box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
@@ -116,8 +117,7 @@ body{
 
 			h1{
 				margin: 5px 0 0 0;
-				color: white;
-				
+				color: white;	
 				width: 100%;
 				display: block;
 				font-family: Century_Gothic_Bold;
@@ -127,15 +127,14 @@ body{
 				a{
 					text-decoration: none;
 					color: white;
-					//z-index: -96;
 				}
 			}
-			nav{
-				
+
+			nav{		
 				width: 100%;
-				
 				display: block;
 				height: 40px;
+
 				ul{
 					display: none;
 					li{
@@ -176,6 +175,7 @@ body{
 				}
 
 				select{
+					margin-top: 5px;
 					display: inline-block;
 
 					option{
@@ -215,7 +215,7 @@ body{
 		font-size: 14px;
 
 		article{
-			margin: 0 0 0 20px;
+			margin: 0 20px 0 20px;
 			padding: 20px 0 0 0;
 
 			h1{
@@ -266,7 +266,7 @@ body{
 					text-align: center;
 				}
 			}
-		}
+		} /* eo article */
 
 		aside{
 			color: white;
@@ -282,11 +282,11 @@ body{
 					padding: 0;
 
 					opacity: 0.5;
-					filter:alpha(opacity=50);
+					filter: alpha(opacity=50);
 
 					&:hover{
 						opacity: 1;
-						filter:alpha(opacity=100);
+						filter: alpha(opacity=100);
 					}
 
 					&:nth-child(1){
@@ -317,7 +317,7 @@ body{
 						width:34px;
 						height:34px;
 					}
-				}
+				} /* eo li */
 			} /* eo ul */
 
 			h3{
@@ -363,7 +363,6 @@ body{
 	footer{
 		color:white;
 		padding: 10px 0 10px 20px;
-
 	}
 }
 
@@ -427,27 +426,6 @@ footer{
 	// height: 82px;
 }
 
-@media (max-width: 320px) {
-
-	#header-container header div {
-		h1{
-			
-		}
-
-		nav{
-			
-
-			ul { 
-				
-			}
-
-			select { 
-				
-			}
-		}
-	}
-}
-
 @media (min-width: 321px) and (max-width: 480px) {
 
 	#header-container header div {
@@ -456,7 +434,7 @@ footer{
 			float: left;
 			width: 160px;
 			display: block;
-			margin-top: 10px;
+			
 		}
 
 		nav{
@@ -496,7 +474,6 @@ footer{
 					width: 42%;
 					font-size: 24px;
 					margin: 20px 0 0 0;
-
 				}
 
 				nav{
@@ -509,7 +486,6 @@ footer{
 						display: block;
 
 						li{
-							
 							float: left;
 							width: 62px;
 							height: 60px;
@@ -531,35 +507,49 @@ footer{
 	}
 
 	#main-container{
-		padding-top: 60px;
+		//padding-top: 60px;
 
-		article{
-			width: 501px;
-			
-			#verkiezing-tekst{
-				width: 45%;
-			}
-			#jongvld{
-				display: block;
-				float: right;
-			}
-			#postit{
-				margin-bottom: 20px;
-			}
-			.postit{
-				display: inline-block;
-				width: 49%;
-			}
-		}
+		#main{
 
-		aside{
 			article{
+				width: 100%;
 
+				&#gemeenteraadsverkiezing{
+					margin-top: 60px;
+				}
+
+				&#overmij{
+					margin-top: 60px;
+				}
+
+				&#contact{
+					margin-top: 60px;
+				}
+	
+				#verkiezing-tekst{
+					width: 45%;
+				}
+				#jongvld{
+					display: block;
+					float: right;
+				}
+				#postit{
+					margin-bottom: 20px;
+				}
+				.postit{
+					display: inline-block;
+					width: 47%;
+				}
 			}
+
+			aside{
+				article{
+
+				}
+			}
+
 		}
 	}
-
-
 
 	#main img{
 		margin: 20px 0px 40px 0px;
@@ -568,11 +558,6 @@ footer{
 	#picture{
 		//display: none;
 	}
-
-	
-/* ========================
-		INTERMEDIATE: IE Fixes
-	 ======================== */
 
 	nav ul li{
 		display:inline;
@@ -583,10 +568,6 @@ footer{
 }
 
 @media only screen and (min-width: 768px) {
-
-/* ====================
-		WIDE: CSS3 Effects
-	 ==================== */
 
 	aside{
 		-webkit-box-shadow:0 5px 10px #aaa;
@@ -617,10 +598,6 @@ footer{
 		}
 	}
 
-/* ============
-		WIDE: Menu
-	 ============ */
-	
 	header{
 		position: relative;
 	}
@@ -632,12 +609,8 @@ footer{
 		width: 240px;
 	}
 
-/* ============
-		WIDE: Main
-	 ============ */
-
 	#main-container{
-		padding-top: 0;
+		//padding-top: 0;
 
 		#main article{
 			float: left;
@@ -658,10 +631,6 @@ footer{
 }
 
 @media only screen and (min-width: 1140px) {
-
-/* ===============
-		Maximal Width
-	 =============== */
 
 	 header{
 		//text-align: center;
