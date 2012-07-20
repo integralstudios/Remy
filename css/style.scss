@@ -245,19 +245,7 @@ body{
 					.barak{
 						border: 1px solid #ccc;
 						margin-bottom: 20px;
-						
-						&:before{
-							top: 52px;
-							left: 5px;
-							-webkit-transform: rotate(-5deg);
-							box-shadow: 7px 6px 15px #333;
-						}
-						&:after{
-							top: 52px;
-							right: 5px;
-							-webkit-transform: rotate(5deg);
-							box-shadow: -7px 6px 15px #333;
-						}
+						box-shadow: 0px 3px 6px #aaa;
 
 						h3{
 							background-color: rgba(126,176,204,1);
