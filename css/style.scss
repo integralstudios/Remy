@@ -207,13 +207,35 @@ body{
 					color: rgba(64,144,206, 1);
 					margin: 0px;
 				}
-
 				&#home{
 
 				}
 				&#gemeenteraadsverkiezing{
 					img{
 						margin: 0 0px 0px 0;
+					}
+					.barak{
+						border: 1px solid #ccc;
+						margin-bottom: 20px;
+						box-shadow: 0px 3px 6px #aaa;
+
+						h3{
+							background-color: rgba(126,176,204,1);
+							text-align: center;
+							color: white;
+							margin: 0;
+							padding: 10px 0;
+							font-family: BreeSerif;
+						}
+						p{
+							padding: 10px;
+						}
+					}
+					#inleiding{
+						h3{
+							font-family: BreeSerif;
+							color: rgba(126,176,204,1);
+						}
 					}
 				}
 				&#overmij{
@@ -259,19 +281,6 @@ body{
 						&:nth-child(8){
 							background-position: 0 -278px;
 						}
-					}
-				}
-				
-				.postit{
-					margin: 0 auto;
-					box-shadow: 0 8px 6px -6px rgba(0,0,0,.5);
-					
-					h3{
-						background: rgb(1, 142, 194);
-						margin-top: 0;
-						padding: 10px 0;
-						color: white;
-						text-align: center;
 					}
 				}
 			} /* eo article */

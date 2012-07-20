@@ -322,6 +322,22 @@ body {
           margin: 0px; }
         #main-container #wrapper #main article#gemeenteraadsverkiezing img {
           margin: 0 0px 0px 0; }
+        #main-container #wrapper #main article#gemeenteraadsverkiezing .barak {
+          border: 1px solid #ccc;
+          margin-bottom: 20px;
+          box-shadow: 0px 3px 6px #aaa; }
+          #main-container #wrapper #main article#gemeenteraadsverkiezing .barak h3 {
+            background-color: #7eb0cc;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 10px 0;
+            font-family: BreeSerif; }
+          #main-container #wrapper #main article#gemeenteraadsverkiezing .barak p {
+            padding: 10px; }
+        #main-container #wrapper #main article#gemeenteraadsverkiezing #inleiding h3 {
+          font-family: BreeSerif;
+          color: #7eb0cc; }
         #main-container #wrapper #main article#overmij img {
           display: block;
           margin: 0 0 0 0; }
@@ -352,15 +368,6 @@ body {
             background-position: 0 -232px; }
           #main-container #wrapper #main article#contact p:nth-child(8) {
             background-position: 0 -278px; }
-        #main-container #wrapper #main article .postit {
-          margin: 0 auto;
-          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5); }
-          #main-container #wrapper #main article .postit h3 {
-            background: #018ec2;
-            margin-top: 0;
-            padding: 10px 0;
-            color: white;
-            text-align: center; }
     #main-container #wrapper aside {
       display: none; }
 
