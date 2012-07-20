@@ -281,7 +281,8 @@ body {
           display: block;
           width: 62px;
           height: 60px;
-          background-size: 220px; }
+          background-size: 220px;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
           .header-container header nav ul #a:hover, .header-container header nav ul #a:visited, .header-container header nav ul #b:hover, .header-container header nav ul #b:visited, .header-container header nav ul #c:hover, .header-container header nav ul #c:visited, .header-container header nav ul #d:hover, .header-container header nav ul #d:visited {
             color: white; }
         .header-container header nav ul #a {
@@ -387,21 +388,21 @@ body {
               background: url("../img/social_hover@2x.png") no-repeat 0 0;
               background-size: 160px; }
           #main-container #wrapper aside ul li:nth-child(2) {
-            background: url("../img/social@2x") no-repeat -42px 0;
+            background: url("../img/social@2x.png") no-repeat -42px 0;
             width: 34px;
             height: 34px; }
             #main-container #wrapper aside ul li:nth-child(2) a {
               background: url("../img/social_hover@2x.png") no-repeat -42px 0;
               background-size: 160px; }
           #main-container #wrapper aside ul li:nth-child(3) {
-            background: url("../img/social@2x") no-repeat -84px 0;
+            background: url("../img/social@2x.png") no-repeat -84px 0;
             width: 34px;
             height: 34px; }
             #main-container #wrapper aside ul li:nth-child(3) a {
               background: url("../img/social_hover@2x.png") no-repeat -84px 0;
               background-size: 160px; }
           #main-container #wrapper aside ul li:nth-child(4) {
-            background: url("../img/social@2x") no-repeat -126px 0;
+            background: url("../img/social@2x.png") no-repeat -126px 0;
             width: 34px;
             height: 34px; }
             #main-container #wrapper aside ul li:nth-child(4) a {
