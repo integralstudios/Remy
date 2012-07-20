@@ -297,16 +297,13 @@ body {
         margin-top: 5px;
         display: inline-block; }
 
-#picture {
-  height: 0; }
-
 #main-container {
   background: url("../img/pattern.png") repeat-x 0 0;
-  display: block; }
+  display: block;
+  /* eo wrapper */ }
   #main-container #wrapper {
     width: 100%;
-    /* eo main */
-    /* eo aside */ }
+    /* eo main */ }
     #main-container #wrapper #main {
       min-height: 100%;
       height: 100%;
@@ -317,7 +314,7 @@ body {
       font-size: 14px;
       /* eo article */ }
       #main-container #wrapper #main article {
-        margin: 20px 20px 0 20px; }
+        margin: 20px 20px 120px 20px; }
         #main-container #wrapper #main article h2 {
           font-family: BreeSerif;
           font-size: 1.5em;
@@ -330,26 +327,31 @@ body {
           margin: 0 0 0 0; }
         #main-container #wrapper #main article#contact p {
           margin-left: 10px;
-          padding-left: 45px; }
+          padding-left: 45px;
+          background-image: url(../img/contact_sprite@2x.png);
+          background-repeat: no-repeat;
+          background-size: 26px;
+          height: 28px;
+          line-height: 28px; }
           #main-container #wrapper #main article#contact p a {
             text-decoration: none;
             color: #222; }
             #main-container #wrapper #main article#contact p a:visited {
               color: #222; }
-        #main-container #wrapper #main article#contact p:nth-child(2) {
-          background: url(../img/contact_sprite.png) no-repeat 0 0; }
-        #main-container #wrapper #main article#contact p:nth-child(3) {
-          background: url(../img/contact_sprite.png) no-repeat 0 -45px; }
-        #main-container #wrapper #main article#contact p:nth-child(4) {
-          background: url(../img/contact_sprite.png) no-repeat 0 -84px; }
-        #main-container #wrapper #main article#contact p:nth-child(5) {
-          background: url(../img/contact_sprite.png) no-repeat 0 -130px; }
-        #main-container #wrapper #main article#contact p:nth-child(6) {
-          background: url(../img/contact_sprite.png) no-repeat 0 -172px; }
-        #main-container #wrapper #main article#contact p:nth-child(7) {
-          background: url(../img/contact_sprite.png) no-repeat 0 -216px; }
-        #main-container #wrapper #main article#contact p:nth-child(8) {
-          background: url(../img/contact_sprite.png) no-repeat 0 -259px; }
+          #main-container #wrapper #main article#contact p:nth-child(2) {
+            background-position: 0 0; }
+          #main-container #wrapper #main article#contact p:nth-child(3) {
+            background-position: 0 -42px; }
+          #main-container #wrapper #main article#contact p:nth-child(4) {
+            background-position: 0 -88px; }
+          #main-container #wrapper #main article#contact p:nth-child(5) {
+            background-position: 0 -140px; }
+          #main-container #wrapper #main article#contact p:nth-child(6) {
+            background-position: 0 -186px; }
+          #main-container #wrapper #main article#contact p:nth-child(7) {
+            background-position: 0 -232px; }
+          #main-container #wrapper #main article#contact p:nth-child(8) {
+            background-position: 0 -278px; }
         #main-container #wrapper #main article .postit {
           margin: 0 auto;
           box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5); }
@@ -360,80 +362,14 @@ body {
             color: white;
             text-align: center; }
     #main-container #wrapper aside {
-      /* eo ul */
-      /* eo section#feed */ }
-      #main-container #wrapper aside ul {
-        margin: 0;
-        padding: 0;
-        /* eo li */ }
-        #main-container #wrapper aside ul li {
-          display: inline-block;
-          margin: 0 15px 0 15px;
-          padding: 0; }
-          #main-container #wrapper aside ul li a {
-            display: block;
-            width: 34px;
-            height: 34px;
-            opacity: 0.5;
-            filter: alpha(opacity=50); }
-            #main-container #wrapper aside ul li a:hover {
-              opacity: 1;
-              filter: alpha(opacity=100); }
-          #main-container #wrapper aside ul li:nth-child(1) {
-            width: 34px;
-            height: 34px;
-            background: url("../img/social@2x.png") no-repeat 0 0;
-            background-size: 160px; }
-            #main-container #wrapper aside ul li:nth-child(1) a {
-              background: url("../img/social_hover@2x.png") no-repeat 0 0;
-              background-size: 160px; }
-          #main-container #wrapper aside ul li:nth-child(2) {
-            background: url("../img/social@2x.png") no-repeat -42px 0;
-            width: 34px;
-            height: 34px; }
-            #main-container #wrapper aside ul li:nth-child(2) a {
-              background: url("../img/social_hover@2x.png") no-repeat -42px 0;
-              background-size: 160px; }
-          #main-container #wrapper aside ul li:nth-child(3) {
-            background: url("../img/social@2x.png") no-repeat -84px 0;
-            width: 34px;
-            height: 34px; }
-            #main-container #wrapper aside ul li:nth-child(3) a {
-              background: url("../img/social_hover@2x.png") no-repeat -84px 0;
-              background-size: 160px; }
-          #main-container #wrapper aside ul li:nth-child(4) {
-            background: url("../img/social@2x.png") no-repeat -126px 0;
-            width: 34px;
-            height: 34px; }
-            #main-container #wrapper aside ul li:nth-child(4) a {
-              background: url("../img/social_hover@2x.png") no-repeat -126px 0;
-              background-size: 160px; }
-      #main-container #wrapper aside section#feed {
-        box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-        background-color: white; }
-        #main-container #wrapper aside section#feed h3 {
-          background: url("../img/header.png");
-          color: white;
-          padding: 10px 0 5px 20px;
-          font-family: BreeSerif; }
-        #main-container #wrapper aside section#feed div#tweets {
-          padding: 10px 20px; }
-          #main-container #wrapper aside section#feed div#tweets article hgroup h2 {
-            margin: 0 0 0px 0;
-            font-size: 16px;
-            font-weight: lighter; }
-          #main-container #wrapper aside section#feed div#tweets article section p {
-            font-size: 14px;
-            font-weight: lighter; }
-          #main-container #wrapper aside section#feed div#tweets article section a {
-            text-decoration: none;
-            color: #4090ce; }
+      display: none; }
 
 /* eo main-contianer */
 #footer-container {
   margin-top: -80px;
   clear: both;
-  position: relative; }
+  position: relative;
+  /* eo footer */ }
   #footer-container footer {
     color: white;
     padding: 10px 0 10px 10px; }
@@ -452,32 +388,26 @@ body {
         list-style: none;
         display: inline-block;
         margin-left: 5px;
-        padding: 0; }
+        padding: 0;
+        background-image: url("../img/social_footer.png");
+        background-repeat: no-repeat;
+        background-size: 191px;
+        width: 41px;
+        height: 41px; }
         #footer-container footer #social-icons li:nth-child(1) {
-          background: url("../img/social_footer.png") no-repeat 0px 0px;
-          background-size: 191px;
-          width: 41px;
-          height: 41px; }
+          background-position: 0px 0px; }
         #footer-container footer #social-icons li:nth-child(2) {
-          background: url("../img/social_footer.png") no-repeat -50px 0px;
-          background-size: 191px;
-          width: 41px;
-          height: 41px; }
+          background-position: -50px 0px; }
         #footer-container footer #social-icons li:nth-child(3) {
-          background: url("../img/social_footer.png") no-repeat -100px 0px;
-          background-size: 191px;
-          width: 41px;
-          height: 41px; }
+          background-position: -100px 0px; }
         #footer-container footer #social-icons li:nth-child(4) {
-          background: url("../img/social_footer.png") no-repeat -150px 0px;
-          background-size: 191px;
-          width: 41px;
-          height: 41px; }
+          background-position: -150px 0px; }
         #footer-container footer #social-icons li a {
           width: 40px;
           height: 40px;
           display: block; }
 
+/* eo footer container */
 #tumblr ol {
   padding-left: 0; }
   #tumblr ol li {
@@ -567,14 +497,9 @@ body {
       #main-container #wrapper #main article#gemeenteraadsverkiezing .postit {
         display: inline-block;
         width: 47%; }
-    #main-container #wrapper #main aside #feed article {
-      margin-top: 5px; }
 
   #main img {
-    margin: 20px 0px 40px 0px; }
-
-  nav ul li {
-    display: inline; } }
+    margin: 20px 0px 40px 0px; } }
 @media only screen and (min-width: 768px) {
   #header-container {
     box-shadow: none; }
@@ -605,27 +530,95 @@ body {
     box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25); }
 
   #main-container {
-    height: 100%; }
-    #main-container #wrapper #main {
-      width: 70%;
-      float: left; }
-      #main-container #wrapper #main article {
+    height: 100%;
+    /* eo wrapper */ }
+    #main-container #wrapper {
+      /* eo aside */ }
+      #main-container #wrapper #main {
+        width: 70%;
         float: left; }
-        #main-container #wrapper #main article#home {
-          margin-top: 0; }
-        #main-container #wrapper #main article#gemeenteraadsverkiezing, #main-container #wrapper #main article#overmij, #main-container #wrapper #main article#contact {
-          margin-top: 80px; }
-    #main-container #wrapper aside {
-      float: right;
-      width: 25%;
-      margin-top: 60px; }
-      #main-container #wrapper aside ul li {
-        margin: 0; }
-      #main-container #wrapper aside #feed {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-        -moz-box-shadow: 0 5px 10px #aaa;
-        box-shadow: 0 5px 10px #aaa; }
+        #main-container #wrapper #main article {
+          float: left; }
+          #main-container #wrapper #main article#home {
+            margin-top: 0; }
+          #main-container #wrapper #main article#gemeenteraadsverkiezing, #main-container #wrapper #main article#overmij, #main-container #wrapper #main article#contact {
+            margin-top: 80px; }
+      #main-container #wrapper aside {
+        display: block;
+        float: right;
+        width: 25%;
+        margin-top: 100px;
+        /* eo ul */
+        /* eo section#feed */ }
+        #main-container #wrapper aside ul {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          /* eo li */ }
+          #main-container #wrapper aside ul li {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            background-size: 160px;
+            margin-right: -4px;
+            width: 25%; }
+            #main-container #wrapper aside ul li a {
+              display: block;
+              margin: 0 auto;
+              width: 34px;
+              height: 34px;
+              opacity: 0.5;
+              filter: alpha(opacity=50);
+              background-size: 160px; }
+              #main-container #wrapper aside ul li a:hover {
+                opacity: 1;
+                filter: alpha(opacity=100); }
+            #main-container #wrapper aside ul li:nth-child(1) {
+              height: 34px;
+              background: url("../img/social@2x.png") no-repeat 0 0; }
+              #main-container #wrapper aside ul li:nth-child(1) a {
+                background: url("../img/social_hover@2x.png") no-repeat 0 0; }
+            #main-container #wrapper aside ul li:nth-child(2) {
+              background: url("../img/social@2x.png") no-repeat -42px 0;
+              height: 34px; }
+              #main-container #wrapper aside ul li:nth-child(2) a {
+                background: url("../img/social_hover@2x.png") no-repeat -42px 0; }
+            #main-container #wrapper aside ul li:nth-child(3) {
+              background: url("../img/social@2x.png") no-repeat -84px 0;
+              height: 34px; }
+              #main-container #wrapper aside ul li:nth-child(3) a {
+                background: url("../img/social_hover@2x.png") no-repeat -84px 0; }
+            #main-container #wrapper aside ul li:nth-child(4) {
+              background: url("../img/social@2x.png") no-repeat -126px 0;
+              height: 34px; }
+              #main-container #wrapper aside ul li:nth-child(4) a {
+                background: url("../img/social_hover@2x.png") no-repeat -126px 0; }
+        #main-container #wrapper aside section#feed {
+          box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+          background-color: white;
+          -webkit-box-shadow: 0 5px 10px #aaa;
+          -moz-box-shadow: 0 5px 10px #aaa;
+          box-shadow: 0 5px 10px #aaa;
+          /* eo div#tweets */ }
+          #main-container #wrapper aside section#feed h3 {
+            background: url("../img/header.png");
+            color: white;
+            padding: 10px 0 5px 20px;
+            font-family: BreeSerif; }
+          #main-container #wrapper aside section#feed div#tweets {
+            padding: 10px 20px; }
+            #main-container #wrapper aside section#feed div#tweets article hgroup h2 {
+              margin: 0 0 0px 0;
+              font-size: 16px;
+              font-weight: lighter; }
+            #main-container #wrapper aside section#feed div#tweets article section p {
+              font-size: 14px;
+              font-weight: lighter; }
+            #main-container #wrapper aside section#feed div#tweets article section a {
+              text-decoration: none;
+              color: #4090ce; }
 
+  /* eo main container */
   #main img {
     display: inline-block; }
 
