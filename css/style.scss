@@ -423,7 +423,61 @@ body{
 
 	footer{
 		color:white;
-		padding: 10px 0 10px 20px;
+		padding: 10px 0 10px 10px;
+		
+		p{
+			font-size: .8em;
+			width: 100%;
+			text-align: center;
+			display: inline-block;
+			
+			a{
+				color: white;
+				text-decoration: none;
+			}
+		}
+		
+		#social-icons{
+			text-align: center;
+			//border: 1px solid red;
+			padding: 0;
+			li{
+				list-style: none;
+				display: inline-block;
+				//float: right;
+				margin-left: 5px;
+				padding: 0;
+				&:nth-child(1){
+					background: url('../img/social_footer.png') no-repeat 0px 0px;
+					background-size: 191px;
+					width: 41px;
+					height: 41px;
+				}
+				&:nth-child(2){
+					background: url('../img/social_footer.png') no-repeat -50px 0px;
+					background-size: 191px;
+					width: 41px;
+					height: 41px;
+				}
+				&:nth-child(3){
+					background: url('../img/social_footer.png') no-repeat -100px 0px;
+					background-size: 191px;
+					width: 41px;
+					height: 41px;
+				}
+				&:nth-child(4){
+					background: url('../img/social_footer.png') no-repeat -150px 0px;
+					background-size: 191px;
+					width: 41px;
+					height: 41px;
+				}
+				a{
+					width: 40px;
+					height: 40px;
+					display: block;
+				}
+			}
+		}
 	}
 }
 
@@ -727,6 +781,34 @@ body{
 
 	#main img{
 		display: inline-block;
+	}
+	
+	#footer-container{
+		height: 85px;
+	}
+	
+	footer{
+		p{
+			width: 45% !important;
+			display: inline-block;
+			text-align: left !important;
+			margin: 0;
+			padding: 0;
+			padding-top: 20px;
+			margin-left: 25px;
+
+			//border: 1px solid red;
+		}
+		#social-icons{
+			margin: 0;
+			padding: 0;
+			padding-top: 10px !important;
+			margin-right: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			width: 200px;
+			float: right;
+		}
 	}
 }
 
