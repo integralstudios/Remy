@@ -42,7 +42,7 @@ function parseTwitterResultJson(data, container) {
 		htmlContent += '</section></article>';
 	});
 
-	$("section#feed").html(htmlContent);
+	$("section#feed #tweets").html(htmlContent);
 		
 	setupTargetLinks();
 }
