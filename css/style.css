@@ -236,6 +236,7 @@ body {
   font: 16px/26px Helvetica, Helvetica Neue, Arial;
   background: url("../img/bg.png");
   height: 100%;
+  min-height: 100%;
   position: relative; }
 
 .active {
@@ -244,16 +245,16 @@ body {
 .header-container, #footer-container {
   background: url("../img/header.png"); }
 
-header {
+.header-container {
   width: 100%;
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
   height: 80px;
   background: url("../img/header.png");
   padding-top: 5px; }
-  header .header-container {
+  .header-container header {
     width: 90%;
     margin: 0 auto; }
-    header .header-container .title {
+    .header-container header .title {
       margin: 0px 0 0 0;
       color: white;
       width: 100%;
@@ -261,37 +262,37 @@ header {
       font-family: Century_Gothic_Bold;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
       font-size: 20px; }
-      header .header-container .title a {
+      .header-container header .title a {
         text-decoration: none;
         color: white; }
-    header .header-container nav {
+    .header-container header nav {
       width: 100%;
       display: block; }
-      header .header-container nav ul {
+      .header-container header nav ul {
         display: none; }
-        header .header-container nav ul li {
+        .header-container header nav ul li {
           float: left;
           width: 62px;
           height: 60px;
           margin: 0px 13px 0 0; }
-          header .header-container nav ul li:last-child {
+          .header-container header nav ul li:last-child {
             margin: 0; }
-        header .header-container nav ul #a, header .header-container nav ul #b, header .header-container nav ul #c, header .header-container nav ul #d {
+        .header-container header nav ul #a, .header-container header nav ul #b, .header-container header nav ul #c, .header-container header nav ul #d {
           display: block;
           width: 62px;
           height: 60px;
-          background-size: 400px; }
-          header .header-container nav ul #a:hover, header .header-container nav ul #a:visited, header .header-container nav ul #b:hover, header .header-container nav ul #b:visited, header .header-container nav ul #c:hover, header .header-container nav ul #c:visited, header .header-container nav ul #d:hover, header .header-container nav ul #d:visited {
+          background-size: 220px; }
+          .header-container header nav ul #a:hover, .header-container header nav ul #a:visited, .header-container header nav ul #b:hover, .header-container header nav ul #b:visited, .header-container header nav ul #c:hover, .header-container header nav ul #c:visited, .header-container header nav ul #d:hover, .header-container header nav ul #d:visited {
             color: white; }
-        header .header-container nav ul #a {
-          background: url("../img/icons.png") no-repeat -108px 5px; }
-        header .header-container nav ul #b {
-          background: url("../img/icons.png") no-repeat 12px 5px; }
-        header .header-container nav ul #c {
-          background: url("../img/icons.png") no-repeat -230px 5px; }
-        header .header-container nav ul #d {
-          background: url("../img/icons.png") no-repeat -352px 5px; }
-      header .header-container nav select {
+        .header-container header nav ul #a {
+          background: url("../img/navigation@2x.png") no-repeat 12px 8px; }
+        .header-container header nav ul #b {
+          background: url("../img/navigation@2x.png") no-repeat -50px 8px; }
+        .header-container header nav ul #c {
+          background: url("../img/navigation@2x.png") no-repeat -110px 7px; }
+        .header-container header nav ul #d {
+          background: url("../img/navigation@2x.png") no-repeat -172px 8px; }
+      .header-container header nav select {
         margin-top: 5px;
         display: inline-block; }
 
@@ -300,120 +301,136 @@ header {
 
 #main-container {
   background: url("../img/pattern.png") repeat-x 0 0;
-  height: 100%;
-  /* eo main */
-  /* eo aside */ }
-  #main-container #main {
-    min-height: 100%;
-    height: 100%;
-    background-color: #FFF;
-    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-    font-family: Century_Gothic, Helvetica;
-    font-weight: lighter;
-    font-size: 14px;
-    /* eo article */ }
-    #main-container #main article {
-      margin: 20px 20px 0 20px; }
-      #main-container #main article h2 {
-        font-family: BreeSerif;
-        font-size: 1.5em;
-        color: #4090ce;
-        margin: 0px; }
-      #main-container #main article#gemeenteraadsverkiezing img {
-        margin: 0 0px 0px 0; }
-      #main-container #main article#overmij img {
-        display: block;
-        margin: 0 0 0 0; }
-      #main-container #main article#contact p {
-        margin-left: 10px;
-        padding-left: 45px; }
-        #main-container #main article#contact p a {
-          text-decoration: none;
-          color: #222; }
-          #main-container #main article#contact p a:visited {
-            color: #222; }
-      #main-container #main article#contact p:nth-child(2) {
-        background: url(../img/contact_sprite.png) no-repeat 0 0; }
-      #main-container #main article#contact p:nth-child(3) {
-        background: url(../img/contact_sprite.png) no-repeat 0 -45px; }
-      #main-container #main article#contact p:nth-child(4) {
-        background: url(../img/contact_sprite.png) no-repeat 0 -84px; }
-      #main-container #main article#contact p:nth-child(5) {
-        background: url(../img/contact_sprite.png) no-repeat 0 -130px; }
-      #main-container #main article#contact p:nth-child(6) {
-        background: url(../img/contact_sprite.png) no-repeat 0 -172px; }
-      #main-container #main article#contact p:nth-child(7) {
-        background: url(../img/contact_sprite.png) no-repeat 0 -216px; }
-      #main-container #main article#contact p:nth-child(8) {
-        background: url(../img/contact_sprite.png) no-repeat 0 -259px; }
-      #main-container #main article .postit {
-        margin: 0 auto;
-        box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5); }
-        #main-container #main article .postit h3 {
-          background: #018ec2;
-          margin-top: 0;
-          padding: 10px 0;
-          color: white;
-          text-align: center; }
-  #main-container aside {
-    /* eo ul */
-    /* eo section#feed */ }
-    #main-container aside ul {
-      margin: 0;
-      padding: 10px;
-      /* eo li */ }
-      #main-container aside ul li {
-        display: inline-block;
-        margin: 0 15px 0 15px;
-        padding: 0;
-        opacity: 0.5;
-        filter: alpha(opacity=50); }
-        #main-container aside ul li:hover {
-          opacity: 1;
-          filter: alpha(opacity=100); }
-        #main-container aside ul li:nth-child(1) {
-          width: 34px;
-          height: 34px; }
-          #main-container aside ul li:nth-child(1) a {
-            background: url("../img/social_hover.png") no-repeat 0 0;
-            background-size: 160px; }
-        #main-container aside ul li:nth-child(2) {
-          background: url("../img/social.png") no-repeat -42px 0;
-          width: 34px;
-          height: 34px; }
-        #main-container aside ul li:nth-child(3) {
-          background: url("../img/social.png") no-repeat -86px 0;
-          width: 34px;
-          height: 34px; }
-        #main-container aside ul li:nth-child(4) {
-          background: url("../img/social.png") no-repeat -128px 0;
-          width: 34px;
-          height: 34px; }
-        #main-container aside ul li a {
+  display: block; }
+  #main-container #wrapper {
+    width: 100%;
+    /* eo main */
+    /* eo aside */ }
+    #main-container #wrapper #main {
+      min-height: 100%;
+      height: 100%;
+      background-color: #FFF;
+      box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+      font-family: Century_Gothic, Helvetica;
+      font-weight: lighter;
+      font-size: 14px;
+      /* eo article */ }
+      #main-container #wrapper #main article {
+        margin: 20px 20px 0 20px; }
+        #main-container #wrapper #main article h2 {
+          font-family: BreeSerif;
+          font-size: 1.5em;
+          color: #4090ce;
+          margin: 0px; }
+        #main-container #wrapper #main article#gemeenteraadsverkiezing img {
+          margin: 0 0px 0px 0; }
+        #main-container #wrapper #main article#overmij img {
           display: block;
-          width: 34px;
-          height: 34px; }
-    #main-container aside section#feed {
-      box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25); }
-      #main-container aside section#feed h3 {
-        background: url("../img/header.png");
-        color: white;
-        padding: 5px 0 5px 20px; }
-      #main-container aside section#feed div#tweets {
-        padding: 10px 20px; }
-        #main-container aside section#feed div#tweets article hgroup h2 {
-          margin: 0 0 0px 0;
-          font-size: 16px;
-          font-weight: lighter; }
-        #main-container aside section#feed div#tweets article section p {
-          font-size: 14px;
-          font-weight: lighter; }
-        #main-container aside section#feed div#tweets article section a {
-          text-decoration: none;
-          color: #4090ce; }
+          margin: 0 0 0 0; }
+        #main-container #wrapper #main article#contact p {
+          margin-left: 10px;
+          padding-left: 45px; }
+          #main-container #wrapper #main article#contact p a {
+            text-decoration: none;
+            color: #222; }
+            #main-container #wrapper #main article#contact p a:visited {
+              color: #222; }
+        #main-container #wrapper #main article#contact p:nth-child(2) {
+          background: url(../img/contact_sprite.png) no-repeat 0 0; }
+        #main-container #wrapper #main article#contact p:nth-child(3) {
+          background: url(../img/contact_sprite.png) no-repeat 0 -45px; }
+        #main-container #wrapper #main article#contact p:nth-child(4) {
+          background: url(../img/contact_sprite.png) no-repeat 0 -84px; }
+        #main-container #wrapper #main article#contact p:nth-child(5) {
+          background: url(../img/contact_sprite.png) no-repeat 0 -130px; }
+        #main-container #wrapper #main article#contact p:nth-child(6) {
+          background: url(../img/contact_sprite.png) no-repeat 0 -172px; }
+        #main-container #wrapper #main article#contact p:nth-child(7) {
+          background: url(../img/contact_sprite.png) no-repeat 0 -216px; }
+        #main-container #wrapper #main article#contact p:nth-child(8) {
+          background: url(../img/contact_sprite.png) no-repeat 0 -259px; }
+        #main-container #wrapper #main article .postit {
+          margin: 0 auto;
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5); }
+          #main-container #wrapper #main article .postit h3 {
+            background: #018ec2;
+            margin-top: 0;
+            padding: 10px 0;
+            color: white;
+            text-align: center; }
+    #main-container #wrapper aside {
+      /* eo ul */
+      /* eo section#feed */ }
+      #main-container #wrapper aside ul {
+        margin: 0;
+        padding: 0;
+        /* eo li */ }
+        #main-container #wrapper aside ul li {
+          display: inline-block;
+          margin: 0 15px 0 15px;
+          padding: 0; }
+          #main-container #wrapper aside ul li a {
+            display: block;
+            width: 34px;
+            height: 34px;
+            opacity: 0.5;
+            filter: alpha(opacity=50); }
+            #main-container #wrapper aside ul li a:hover {
+              opacity: 1;
+              filter: alpha(opacity=100); }
+          #main-container #wrapper aside ul li:nth-child(1) {
+            width: 34px;
+            height: 34px;
+            background: url("../img/social@2x.png") no-repeat 0 0;
+            background-size: 160px; }
+            #main-container #wrapper aside ul li:nth-child(1) a {
+              background: url("../img/social_hover@2x.png") no-repeat 0 0;
+              background-size: 160px; }
+          #main-container #wrapper aside ul li:nth-child(2) {
+            background: url("../img/social@2x") no-repeat -42px 0;
+            width: 34px;
+            height: 34px; }
+            #main-container #wrapper aside ul li:nth-child(2) a {
+              background: url("../img/social_hover@2x.png") no-repeat -42px 0;
+              background-size: 160px; }
+          #main-container #wrapper aside ul li:nth-child(3) {
+            background: url("../img/social@2x") no-repeat -84px 0;
+            width: 34px;
+            height: 34px; }
+            #main-container #wrapper aside ul li:nth-child(3) a {
+              background: url("../img/social_hover@2x.png") no-repeat -84px 0;
+              background-size: 160px; }
+          #main-container #wrapper aside ul li:nth-child(4) {
+            background: url("../img/social@2x") no-repeat -126px 0;
+            width: 34px;
+            height: 34px; }
+            #main-container #wrapper aside ul li:nth-child(4) a {
+              background: url("../img/social_hover@2x.png") no-repeat -126px 0;
+              background-size: 160px; }
+      #main-container #wrapper aside section#feed {
+        box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+        background-color: white; }
+        #main-container #wrapper aside section#feed h3 {
+          background: url("../img/header.png");
+          color: white;
+          padding: 10px 0 5px 20px;
+          font-family: BreeSerif; }
+        #main-container #wrapper aside section#feed div#tweets {
+          padding: 10px 20px; }
+          #main-container #wrapper aside section#feed div#tweets article hgroup h2 {
+            margin: 0 0 0px 0;
+            font-size: 16px;
+            font-weight: lighter; }
+          #main-container #wrapper aside section#feed div#tweets article section p {
+            font-size: 14px;
+            font-weight: lighter; }
+          #main-container #wrapper aside section#feed div#tweets article section a {
+            text-decoration: none;
+            color: #4090ce; }
 
 /* eo main-contianer */
 #footer-container {
+  margin-top: -80px;
   clear: both;
   position: relative; }
   #footer-container footer {
@@ -444,30 +461,30 @@ header {
       content: "-"; }
 
 @media (min-width: 321px) and (max-width: 480px) {
-  header .header-container {
+  .header-container header {
     height: 40px; }
-    header .header-container .title {
+    .header-container header .title {
       float: left;
       width: 160px;
       margin-top: 7px; }
-    header .header-container nav {
+    .header-container header nav {
       height: 40px;
       float: right;
       width: 225px;
       margin-right: 10%; }
-      header .header-container nav ul {
+      .header-container header nav ul {
         display: none; }
-      header .header-container nav select {
+      .header-container header nav select {
         margin-top: 5px;
         display: inline-block; } }
 @media only screen and (min-width: 481px) {
-  header {
+  .header-container {
     position: fixed;
     height: 60px;
     background: url("../img/header.png");
     padding-top: 0px;
     z-index: 9999; }
-    header .header-container .title {
+    .header-container header .title {
       float: left;
       width: 42%;
       font-size: 22px;
@@ -475,58 +492,60 @@ header {
       -webkit-transition-property: font-size;
       -webkit-transition-duration: 0.1s;
       -webkit-transition-timing-function: linear; }
-    header .header-container nav {
+    .header-container header nav {
       margin: 0px;
       width: 248px;
       float: right; }
-      header .header-container nav ul {
+      .header-container header nav ul {
         display: block; }
-        header .header-container nav ul li {
+        .header-container header nav ul li {
           float: left;
           width: 62px;
           height: 60px;
           margin: 0; }
-          header .header-container nav ul li:hover {
+          .header-container header nav ul li:hover {
             background-color: rgba(40, 114, 189, 0.68);
             -webkit-transition-property: color, background;
             -webkit-transition-duration: 0.3s, 0.3s;
             -webkit-transition-timing-function: linear, ease-in-out; }
-      header .header-container nav select {
+      .header-container header nav select {
         display: none; }
 
-  #main-container {
-    padding-left: 5%;
-    padding-right: 5%; }
-    #main-container #main article {
+  #main-container #wrapper {
+    width: 90%;
+    margin: 0 auto; }
+    #main-container #wrapper #main article {
       margin-top: 80px; }
-      #main-container #main article#gemeenteraadsverkiezing #verkiezing-tekst {
+      #main-container #wrapper #main article#gemeenteraadsverkiezing #verkiezing-tekst {
         width: 45%; }
-      #main-container #main article#gemeenteraadsverkiezing #jongvld {
+      #main-container #wrapper #main article#gemeenteraadsverkiezing #jongvld {
         display: block;
         float: right; }
-      #main-container #main article#gemeenteraadsverkiezing #postit {
+      #main-container #wrapper #main article#gemeenteraadsverkiezing #postit {
         margin-bottom: 20px; }
-      #main-container #main article#gemeenteraadsverkiezing .postit {
+      #main-container #wrapper #main article#gemeenteraadsverkiezing .postit {
         display: inline-block;
         width: 47%; }
-    #main-container #main aside #feed article {
+    #main-container #wrapper #main aside #feed article {
       margin-top: 5px; }
 
   #main img {
     margin: 20px 0px 40px 0px; }
 
   nav ul li {
-    display: inline; }
-
-  .oldie nav a {
-    margin: 0 0.7%; } }
+    display: inline; } }
 @media only screen and (min-width: 768px) {
-  #stroke {
-    background: url("../img/line.png") repeat-x 0 0;
-    height: 19px; }
+  #header-container {
+    box-shadow: none; }
+    #header-container header {
+      position: relative; }
+      #header-container header h1 {
+        font-size: 26px; }
+    #header-container nav {
+      width: 240px; }
 
   #picture {
-    padding: 0px 0 0 0;
+    padding: 60px 0 0 0;
     width: 100%;
     height: 250px;
     background: url("../img/pattern-bg.png") repeat 0 0;
@@ -539,34 +558,32 @@ header {
       display: block;
       height: 250px; }
 
-  header {
-    position: relative; }
-    header h1 {
-      font-size: 26px; }
+  #stroke {
+    background: url("../img/line.png") repeat-x 0 0;
+    height: 19px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25); }
 
-  nav {
-    width: 240px; }
-
-  #main-container #main {
-    width: 70%;
-    float: left; }
-    #main-container #main article {
-      float: left;
-      margin-top: 20px; }
-    #main-container #main#gemeenteraadsverkiezing, #main-container #main#overmij, #main-container #main#contact {
+  #main-container {
+    height: 100%; }
+    #main-container #wrapper #main {
+      width: 70%;
+      float: left; }
+      #main-container #wrapper #main article {
+        float: left; }
+        #main-container #wrapper #main article#home {
+          margin-top: 0; }
+        #main-container #wrapper #main article#gemeenteraadsverkiezing, #main-container #wrapper #main article#overmij, #main-container #wrapper #main article#contact {
+          margin-top: 80px; }
+    #main-container #wrapper aside {
+      float: right;
+      width: 25%;
       margin-top: 60px; }
-    #main-container #main section {
-      width: 50%; }
-  #main-container aside {
-    float: right;
-    width: 25%;
-    margin-top: 20px; }
-    #main-container aside #feed {
-      -webkit-box-shadow: 0 5px 10px #aaa;
-      -moz-box-shadow: 0 5px 10px #aaa;
-      box-shadow: 0 5px 10px #aaa; }
-    #main-container aside article {
-      width: 150px; }
+      #main-container #wrapper aside ul li {
+        margin: 0; }
+      #main-container #wrapper aside #feed {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+        -moz-box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0 5px 10px #aaa; }
 
   #main img {
     display: inline-block; } }
@@ -574,10 +591,8 @@ header {
   header div {
     width: 1026px; }
 
-  .wrapper {
-    width: 1026px;
-    /* 1140px - 10% for margins */
-    margin: 0 auto; }
+  #main-container #wrapper {
+    width: 1026px; }
 
   #picture {
     height: 350px; }
