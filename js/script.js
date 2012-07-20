@@ -42,7 +42,7 @@ function parseTwitterResultJson(data, container) {
 		htmlContent += '</section></article>';
 	});
 
-	$("section#feed #tweets").html(htmlContent);
+	//$("section#feed #tweets").html(htmlContent);
 		
 	setupTargetLinks();
 }
@@ -123,5 +123,4 @@ $(function() {
 	$("nav select").change(function() {
 		window.location = $(this).find("option:selected").val();
 	});
-	
 });
