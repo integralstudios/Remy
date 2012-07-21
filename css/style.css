@@ -278,17 +278,19 @@ body {
           width: 62px;
           height: 60px;
           background-size: 220px;
-          -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          background-image: url("../img/navigation@2x.png");
+          background-repeat: no-repeat; }
           .header-container header nav ul #a:hover, .header-container header nav ul #a:visited, .header-container header nav ul #b:hover, .header-container header nav ul #b:visited, .header-container header nav ul #c:hover, .header-container header nav ul #c:visited, .header-container header nav ul #d:hover, .header-container header nav ul #d:visited {
             color: white; }
         .header-container header nav ul #a {
-          background: url("../img/navigation@2x.png") no-repeat 12px 8px; }
+          background-position: 12px 8px; }
         .header-container header nav ul #b {
-          background: url("../img/navigation@2x.png") no-repeat -50px 8px; }
+          background-position: -50px 8px; }
         .header-container header nav ul #c {
-          background: url("../img/navigation@2x.png") no-repeat -110px 7px; }
+          background-position: -110px 7px; }
         .header-container header nav ul #d {
-          background: url("../img/navigation@2x.png") no-repeat -172px 8px; }
+          background-position: -172px 8px; }
       .header-container header nav select {
         margin-top: 5px;
         display: inline-block; }
@@ -317,6 +319,9 @@ body {
           font-size: 1.5em;
           color: #4090ce;
           margin: 0px; }
+        #main-container #wrapper #main article#gemeenteraadsverkiezing, #main-container #wrapper #main article#overmij, #main-container #wrapper #main article#contact {
+          margin-left: 20px;
+          margin-right: 20px; }
         #main-container #wrapper #main article#home h2 {
           margin-left: 20px; }
         #main-container #wrapper #main article#home #tumblr ol {
@@ -344,6 +349,10 @@ body {
             font-style: italic; }
             #main-container #wrapper #main article#home #tumblr ol .tumblr_source:before {
               content: "-"; }
+        #main-container #wrapper #main article#gemeenteraadsverkiezing a {
+          color: #4090ce; }
+          #main-container #wrapper #main article#gemeenteraadsverkiezing a:visited {
+            color: #4090ce; }
         #main-container #wrapper #main article#gemeenteraadsverkiezing img {
           display: none; }
         #main-container #wrapper #main article#gemeenteraadsverkiezing .barak {
@@ -441,22 +450,24 @@ body {
 
 /* eo footer container */
 @media (min-width: 321px) and (max-width: 480px) {
-  .header-container header {
-    height: 40px; }
-    .header-container header .title {
-      float: left;
-      width: 160px;
-      margin-top: 7px; }
-    .header-container header nav {
-      height: 40px;
-      float: right;
-      width: 225px;
-      margin-right: 10%; }
-      .header-container header nav ul {
-        display: none; }
-      .header-container header nav select {
-        margin-top: 5px;
-        display: inline-block; }
+  .header-container {
+    height: 45px; }
+    .header-container header {
+      height: 40px; }
+      .header-container header .title {
+        float: left;
+        width: 160px;
+        margin-top: 7px; }
+      .header-container header nav {
+        height: 40px;
+        float: right;
+        width: 225px;
+        margin-right: 10%; }
+        .header-container header nav ul {
+          display: none; }
+        .header-container header nav select {
+          margin-top: 5px;
+          display: inline-block; }
 
   #main-container #wrapper #main article#home #tumblr ol .tumblr_video iframe {
     width: 300px; } }
