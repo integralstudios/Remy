@@ -11,8 +11,8 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: rgb(27,116,173); color: #fff; text-shadow: none; }
+::selection { background: rgb(27,116,173); color: #fff; text-shadow: none; }
 
 a { color: #00e; }
 a:visited { color: #551a8b; }
@@ -223,7 +223,7 @@ body{
 						box-shadow: 0px 3px 6px #aaa;
 
 						h3{
-							background-color: rgba(126,176,204,1);
+							background: url(../img/header.png);
 							text-align: center;
 							color: white;
 							margin: 0;
@@ -309,6 +309,9 @@ body{
 			a{
 				color: white;
 				text-decoration: none;
+			}
+			img{
+				display: block;
 			}
 		}
 		#social-icons{
@@ -741,6 +744,12 @@ body{
 
 		#wrapper{
 			width: 1026px;
+			
+			.barak{
+				width: 49%;
+				display: inline-block;
+				vertical-align: top;
+			}
 
 		}
 
