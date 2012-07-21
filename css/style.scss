@@ -73,10 +73,6 @@ td { vertical-align: top; }
 	 Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
 	 ========================================================================== */
 
-img{
-	display: none;
-}
-
 @font-face {
 	font-family: BreeSerif;
 	src: url(../fonts/BreeSerif_Reg.otf);
@@ -120,7 +116,6 @@ body{
 	header{
 		width: 90%;
 		margin: 0 auto;
-
 		.title{
 			margin: 0px 0 0 0;
 			color: white;	
@@ -129,13 +124,11 @@ body{
 			font-family: Century_Gothic_Bold;
 			text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
 			font-size: 20px;
-
 			a{
 				text-decoration: none;
 				color: white;
 			}
 		}
-
 		nav{	
 			width: 100%;
 			display: block;
@@ -152,7 +145,6 @@ body{
 						margin: 0;
 					}
 				}
-
 				#a, #b, #c, #d{
 					display: block;
 					width: 62px;
@@ -164,7 +156,6 @@ body{
 						color:white;
 					}
 				}
-
 				#a{
 					background: url('../img/navigation@2x.png') no-repeat 12px 8px;
 				}
@@ -178,13 +169,16 @@ body{
 					background: url('../img/navigation@2x.png') no-repeat -172px 8px;
 				}
 			}
-
 			select{
 				margin-top: 5px;
 				display: inline-block;
 			}
 		}
 	}
+}
+
+#picture{
+	display: none;
 }
 
 #main-container{
@@ -203,7 +197,7 @@ body{
 			font-weight: lighter;
 			font-size: 14px;
 			article{
-				margin: 20px 20px 120px 20px;
+				margin: 20px 0;
 				h2{
 					font-family: BreeSerif;
 					font-size: 1.5em;
@@ -211,11 +205,64 @@ body{
 					margin: 0px;
 				}
 				&#home{
+					h2{
+						margin-left: 20px;
+					}
+					#tumblr{
+						//margin: 0 20px;
+						ol{
+							padding-left: 0;
+							margin-top: 0;
+							li{
+								list-style: none;
+								border-bottom: 1px solid #DDD;
+								padding: 20px 20px 10px 20px;
+								&:nth-child(odd){
 
+								}
+
+								&:nth-child(even){
+
+								}
+								img, iframe{
+
+								}
+							}
+
+							p{
+								margin-top: 0;
+							}
+							.tumblr_title{
+								margin-top: 0px;
+								text-transform: uppercase;
+							}
+							.tumblr_video{
+								margin: 10px 0;
+								iframe{
+									display: block;
+									margin: 0 auto;
+									width: 100%;
+								}
+							}
+							.tumblr_caption{
+								p{
+									font-style: italic;
+									margin-bottom: 0;
+								}
+							}
+							.tumblr_source{
+								font-style: italic;
+
+								&:before{
+									content: "-";
+								}
+							}
+						}
+					}
 				}
 				&#gemeenteraadsverkiezing{
 					img{
-						margin: 0 0px 0px 0;
+						display: none;
 					}
 					.barak{
 						border: 1px solid #ccc;
@@ -243,8 +290,7 @@ body{
 				}
 				&#overmij{
 					img{
-						display: block;
-						margin: 0 0 0 0;
+						display: none;
 					}
 				}
 				&#contact{
@@ -295,12 +341,14 @@ body{
 } /* eo main-contianer */
 
 #footer-container{
-	margin-top: -80px;
+	//margin-top: -150px;
 	clear: both;
 	position: relative;
 	footer{
-		color:white;
-		padding: 10px 0 10px 10px;
+		width: 90%;
+		margin: 0 auto;
+		color: white;
+		padding: 0px 0 10px 0px;
 		p{
 			font-size: .8em;
 			width: 100%;
@@ -314,6 +362,7 @@ body{
 		#social-icons{
 			text-align: center;
 			padding: 0;
+			margin: 0;
 			li{
 				list-style: none;
 				display: inline-block;
@@ -346,53 +395,7 @@ body{
 	} /* eo footer */
 } /* eo footer container */
 
-#tumblr{
-	ol{
-		padding-left: 0;
-		li{
-			list-style: none;
-			&:nth-child(odd){
 
-			}
-
-			&:nth-child(even){
-
-			}
-			img, iframe{
-
-			}
-		}
-
-		p{
-			margin-top: 0;
-		}
-		.tumblr_title{
-			margin-top: 20px;
-			text-transform: uppercase;
-		}
-		.tumblr_video{
-			padding-top: 10px;
-			iframe{
-				display: block;
-				margin: 0 auto;
-				width: 240px;
-			}
-		}
-		.tumblr_caption{
-			p{
-				font-style: italic;
-				margin-left: 10px;
-			}
-		}
-		.tumblr_source{
-			font-style: italic;
-
-			&:before{
-				content: "-";
-			}
-		}
-	}
-}
 
 @media (min-width: 321px) and (max-width: 480px) {
 
@@ -424,13 +427,65 @@ body{
 			}
 		}
 	}
+
+	#main-container{
+		#wrapper{
+			#main{
+				article{
+					&#home{
+						#tumblr{
+							//margin: 0 20px;
+							ol{
+
+								li{
+	
+									&:nth-child(odd){
+
+									}
+
+									&:nth-child(even){
+
+									}
+									img, iframe{
+
+									}
+								}
+
+								p{
+
+								}
+								.tumblr_title{
+
+								}
+								.tumblr_video{
+
+									iframe{
+										width: 300px;
+									}
+								}
+								.tumblr_caption{
+									p{
+
+									}
+								}
+								.tumblr_source{
+
+
+									&:before{
+
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 481px) {
-	
-	body{
 
-	}
 	.header-container{
 		position: fixed;
 		height: 60px;
@@ -484,6 +539,9 @@ body{
 				article{
 					margin-top: 80px;
 
+					&#home{
+					}
+
 					&#gemeenteraadsverkiezing{
 
 						#verkiezing-tekst{
@@ -492,6 +550,7 @@ body{
 						#jongvld{
 							display: block;
 							float: right;
+							margin-top: 50px;
 						}
 						#postit{
 							margin-bottom: 20px;
@@ -504,20 +563,19 @@ body{
 
 					&#overmij{
 						//margin-top: 60px;
+						img{
+							display: block;
+							float: left;
+							margin: 10px 20px 0 0;
+						}
 					}
 
 					&#contact{
 						//margin-top: 60px;
 					}
-
-				}
-				
+				}	
 			}	
 		}
-	}
-
-	#main img{
-		margin: 20px 0px 40px 0px;
 	}
 }
 
@@ -538,8 +596,8 @@ body{
 			width: 240px;
 		}
 	}
-
 	#picture{
+		display: block;
 		padding: 60px 0 0 0;
 		width: 100%;
 		height: 250px;
@@ -548,20 +606,18 @@ body{
 		-o-transition:all .2s linear; 
 		-moz-transition:all .2s linear; 
 		-webkit-transition:all .2s linear;
-
 		img{
 			margin: 0 auto;
 			display: block;
 			height: 250px;
 		}
 	}
-
 	#stroke{
-		background: url('../img/line.png') repeat-x 0 0;
+		display: block;
 		height: 19px;
+		background: url('../img/line.png') repeat-x 0 0;
 		box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
 	}
-
 	#main-container{
 		height: 100%;
 
@@ -571,10 +627,12 @@ body{
 				width: 70%;
 				float: left;
 				article{
-					float: left;
 
 					&#home{
-						margin-top: 0;
+						margin-top: 10px;
+						img{
+							max-width: 100%;
+						}
 					}
 
 					&#gemeenteraadsverkiezing, &#overmij, &#contact{
@@ -601,13 +659,14 @@ body{
 						margin: 0;
 						background-size: 160px;
 						margin-right: -4px;
-						//width: 25%;
+						width: 25%;
 						background-image: url('../img/social@2x.png');
 						background-repeat: no-repeat;
+						//background-position: center;
 
 						a{
 							display: block;
-							// margin: 0 auto;
+							margin: 0 auto;
 							width:34px;
 							height:34px;
 							opacity: 0.5;
@@ -623,13 +682,13 @@ body{
 						&:nth-child(1){
 							//width: 34px;
 							height: 34px;
-							background-position: 0 0;
+							background-position: 14px 0;
 							a{
-								background-position:   0 0;
+								background-position: 0 0;
 							}
 						}
 						&:nth-child(2){
-							background-position: -42px 0;
+							//background-position: -42px 0;
 							//width: 34px;
 							height: 34px;
 							a{
@@ -637,7 +696,7 @@ body{
 							}
 						}
 						&:nth-child(3){
-							background-position: -84px 0;
+							//background-position: -84px 0;
 							//width: 34px;
 							height: 34px;
 							a{
@@ -645,7 +704,7 @@ body{
 							}
 						}
 						&:nth-child(4){
-							background-position: -126px 0;
+							//background-position: -126px 0;
 							//width: 34px;
 							height: 34px;
 							a{
@@ -665,26 +724,32 @@ body{
 						color: white;
 						padding: 10px 0 5px 20px;
 						font-family: BreeSerif;
+						margin: 0;
 					}
 					div#tweets{
-						padding: 10px 20px;
+						padding: 0px;
 
 						article{
-
-							hgroup{
-
-								h2{
-									margin: 0 0 0px 0;
-									font-size: 16px;
-									font-weight: lighter;
-								}
+							padding: 10px 20px;
+							border-bottom: 1px solid #DDD;
+							&:last-child{
+								border-bottom: none;
 							}
-
+							p{
+								margin: 0;
+							}
+							p.date{
+								font-size: 10px;
+								color: #DDD;
+								line-height: 10px;
+								//text-align: right;
+							}
 							section{
-
 								p{
-									font-size: 14px;
+									font-size: 12px;
+									line-height: 16px;
 									font-weight: lighter;
+									margin-bottom: 2px;
 								}
 								a{
 									text-decoration: none;
@@ -704,52 +769,57 @@ body{
 	
 	#footer-container{
 		height: 85px;
-	}
-	
-	footer{
-		p{
-			width: 45% !important;
-			display: block;
-			text-align: left !important;
-			margin: 0;
-			padding: 0;
-			padding-top: 20px;
-			margin-left: 25px;
-		}
-		#social-icons{
-			margin: 0;
-			padding: 0;
-			padding-top: 10px !important;
-			margin-right: 20px;
-			display: inline-block;
-			vertical-align: middle;
-			width: 200px;
-			float: right;
+		footer{
+			p{
+				width: 45%;
+				display: block;
+				text-align: left;
+				margin: 0;
+				padding: 0;
+				padding-top: 30px;
+				float: left;
+			}
+			#social-icons{
+				margin: 0;
+				padding: 0;
+				padding-top: 20px;
+				margin-right: 20px;
+				display: inline-block;
+				vertical-align: middle;
+				width: 200px;
+				float: right;
+			}
 		}
 	}
 }
 
 @media only screen and (min-width: 1140px) {
 
-	header{
-
-		div{
+	.header-container{
+		header{
 			width: 1026px;
+			padding
+			.title{
+				font-size: 26px;
+			}
 		}
 	}
 	#main-container{
 
 		#wrapper{
 			width: 1026px;
-
 		}
 
 	}
-
 	#picture{
 		height: 350px;
 		img{
 			height: 350px;
+		}
+	}
+	#footer-container{
+		footer{
+			width: 1026px;
 		}
 	}
 }

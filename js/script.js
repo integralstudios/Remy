@@ -35,11 +35,11 @@ function parseTwitterResultJson(data, container) {
 		tweet_text = linkHashtags(tweet_text); // Replace #xxxx with link
 		tweet_text = linkChanneltags(tweet_text); // Replace @xxxx with link
 
-		htmlContent += '<article><hgroup><h2>';
-		htmlContent += tweet_created_at;
-		htmlContent += '</h2></hgroup> <section>';
-		htmlContent += '<p>' + tweet_text + '</p>';
-		htmlContent += '</section></article>';
+		htmlContent += '<article><section><p>';
+		htmlContent += tweet_text;
+		htmlContent += '</p></section><p class="date">';
+		htmlContent += tweet_created_at
+		htmlContent += '</p></article>';
 	});
 
 	$("section#feed #tweets").html(htmlContent);
@@ -79,7 +79,7 @@ $(document).ready(function(){
 		cache: false
 	});
 	
-	loadTwitterUserTimeLine('remybonnaffe', 10, '.twittersearch-result');
+	loadTwitterUserTimeLine('remybonnaffe', 5, '.twittersearch-result');
 	
 	setupTargetLinks();
 });
