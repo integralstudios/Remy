@@ -612,9 +612,7 @@ body {
             margin: 0;
             background-size: 160px;
             margin-right: -4px;
-            width: 25%;
-            background-image: url("../img/social@2x.png");
-            background-repeat: no-repeat; }
+            width: 25%; }
             #main-container #wrapper aside ul li a {
               display: block;
               margin: 0 auto;
@@ -623,14 +621,13 @@ body {
               opacity: 0.5;
               filter: alpha(opacity=50);
               background-size: 160px;
-              background-image: url("../img/social_hover@2x.png");
+              background-image: url("../img/social_hover@2x.png"), url("../img/social@2x.png");
               background-repeat: no-repeat; }
               #main-container #wrapper aside ul li a:hover {
                 opacity: 1;
                 filter: alpha(opacity=100); }
             #main-container #wrapper aside ul li:nth-child(1) {
-              height: 34px;
-              background-position: 14px 0; }
+              height: 34px; }
               #main-container #wrapper aside ul li:nth-child(1) a {
                 background-position: 0 0; }
             #main-container #wrapper aside ul li:nth-child(2) {
