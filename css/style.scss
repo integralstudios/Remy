@@ -11,8 +11,9 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #DDD; color: #000; text-shadow: none; }
+::selection { background: #DDD; color: #000; text-shadow: none; }
+
 
 a { color: #00e; }
 a:visited { color: #551a8b; }
@@ -95,7 +96,6 @@ body{
 	height: 100%;
 	//min-height: 100%;
 	position: relative;
-	//display: block;
 }
 
 .active{
@@ -127,7 +127,9 @@ body{
 			a{
 				text-decoration: none;
 				color: white;
+				&::selection { background: #DDD; color: #FFF; text-shadow: none; }
 			}
+
 		}
 		nav{	
 			width: 100%;
@@ -205,6 +207,7 @@ body{
 					font-size: 1.5em;
 					color: rgba(64,144,206, 1);
 					margin: 0px;
+					&::selection { background: #DDD; color: rgba(64,144,206, 1); text-shadow: none; }
 				}
 				&#gemeenteraadsverkiezing, &#overmij, &#contact{
 					margin-left: 20px;
@@ -215,14 +218,13 @@ body{
 						margin-left: 20px;
 					}
 					#tumblr{
-						//margin: 0 20px;
 						ol{
 							padding-left: 0;
 							margin-top: 0;
-							li{
+							li.tumblr_post{
 								list-style: none;
 								border-bottom: 1px solid #DDD;
-								padding: 20px 20px 10px 20px;
+								padding: 20px 30px 20px 30px;
 								&:nth-child(odd){
 
 								}
@@ -233,17 +235,25 @@ body{
 								img, iframe{
 
 								}
+								&:last-child{
+									border-bottom: none
+								}
 							}
-
 							p{
 								margin-top: 0;
 							}
+							.tumblr_body{
+								ol{
+									margin-left: 20px;
+								}
+							}
 							.tumblr_title{
+								//margin-left: ;
 								margin-top: 0px;
 								text-transform: uppercase;
 							}
 							.tumblr_video{
-								margin: 10px 0;
+								margin: 0 0 10px 0;
 								iframe{
 									display: block;
 									margin: 0 auto;
@@ -562,6 +572,7 @@ body{
 							display: block;
 							float: right;
 							margin-top: 50px;
+							width: 256px;
 						}
 						#postit{
 							margin-bottom: 20px;
@@ -578,6 +589,7 @@ body{
 							display: block;
 							float: left;
 							margin: 10px 20px 0 0;
+							width: 121px;
 						}
 					}
 
@@ -640,7 +652,8 @@ body{
 				article{
 
 					&#home{
-						margin-top: 10px;
+
+						margin-top: 20px;
 						img{
 							max-width: 100%;
 						}
@@ -727,15 +740,16 @@ body{
 				section#feed{
 					box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.25);
 					background-color: white;
-					-webkit-box-shadow:0 5px 10px #aaa;
-					-moz-box-shadow:0 5px 10px #aaa;
-					box-shadow:0 5px 10px #aaa;
+					// -webkit-box-shadow:0 5px 10px #aaa;
+					// -moz-box-shadow:0 5px 10px #aaa;
+					// box-shadow:0 5px 10px #aaa;
 					h3{
 						background: url('../img/header.png');
 						color: white;
 						padding: 10px 0 5px 20px;
 						font-family: BreeSerif;
 						margin: 0;
+						&::selection { background: #DDD; color: #FFF; text-shadow: none; }
 					}
 					div#tweets{
 						padding: 0px;
