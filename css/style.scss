@@ -81,7 +81,7 @@ td { vertical-align: top; }
 
 @font-face {
 	font-family: Century_Gothic_Bold;
-	src: url(../fonts/Century_Gothic_Bold.ttf);
+	src: url(../fonts/Century_Gothic_Bold.ttf) format('truetype');
 	//font-weight:400;
 }
 
@@ -91,12 +91,11 @@ html{
 }
 
 body{ 
-	font:16px/26px Helvetica, Helvetica Neue, Arial; background: url('../img/bg.png'); 
+	font: 16px/26px Helvetica, Helvetica Neue, Arial; background: url('../img/bg.png'); 
 	height: 100%;
 	//min-height: 100%;
 	position: relative;
 	cursor: default;
-
 }
 
 .active{
@@ -113,7 +112,6 @@ body{
 	height: 80px;
 	background: url('../img/header.png');
 	padding-top: 5px;
-
 	header{
 		width: 90%;
 		margin: 0 auto;
@@ -173,6 +171,7 @@ body{
 			select{
 				margin-top: 5px;
 				display: inline-block;
+				font-weight: lighter;
 			}
 		}
 	}
@@ -186,7 +185,8 @@ body{
 	background: url('../img/pattern.png') repeat-x 0 0;
 	display: block;
 	//height: 100%;
-	#wrapper{
+	//padding-bottom: 109px;
+	.wrapper{
 		width: 100%;
 		//height: 100%;
 		#main{
@@ -196,7 +196,7 @@ body{
 			font-weight: lighter;
 			font-size: 14px;
 			article{
-				margin: 20px 0;
+				//margin: 20px 0;
 				h2{
 					font-family: BreeSerif;
 					font-size: 1.5em;
@@ -204,231 +204,205 @@ body{
 					margin: 0px;
 					&::selection { background: #DDD; color: rgba(64,144,206, 1); text-shadow: none; }
 				}
-				&#gemeenteraadsverkiezing, &#overmij, &#contact{
-					margin-left: 20px;
-					margin-right: 20px;
-				}
-				&#home{
-					h2{
-						padding: 15px 0 10px 20px;
-						box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
-						background-color: #FFF;
-					}
-					// #tumblr{
-					// 	ol{
-					// 		padding-left: 0;
-					// 		margin-top: 0;
-					// 		li.tumblr_post{
-					// 			list-style: none;
-					// 			border-bottom: 1px solid #DDD;
-					// 			padding: 20px 30px 20px 30px;
-					// 			&:nth-child(odd){
-
-					// 			}
-
-					// 			&:nth-child(even){
-
-					// 			}
-					// 			img, iframe{
-
-					// 			}
-					// 			&:last-child{
-					// 				border-bottom: none
-					// 			}
-					// 		}
-					// 		p{
-					// 			margin-top: 0;
-					// 		}
-					// 		.tumblr_body{
-					// 			ol{
-					// 				margin-left: 20px;
-					// 			}
-					// 		}
-					// 		.tumblr_title{
-					// 			//margin-left: ;
-					// 			margin-top: 0px;
-					// 			text-transform: uppercase;
-					// 		}
-					// 		.tumblr_video{
-					// 			margin: 0 0 10px 0;
-					// 			iframe{
-					// 				display: block;
-					// 				margin: 0 auto;
-					// 				width: 100%;
-					// 			}
-					// 		}
-					// 		.tumblr_caption{
-					// 			p{
-					// 				font-style: italic;
-					// 				margin-bottom: 0;
-					// 			}
-					// 		}
-					// 		.tumblr_source{
-					// 			font-style: italic;
-
-					// 			&:before{
-					// 				content: "-";
-					// 			}
-					// 		}
-					// 	}
-					// }
-
-					#tumblr{
-						ol{
-							padding-left: 0;
-							margin-top: 0;
-							li.tumblr_post{	
-								list-style: none;
-								//border-bottom: 1px solid #DDD;
-								padding: 20px 30px 20px 30px;
-								margin: 10px 0;
-								box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
-								background-color: #FFF;
-								&:nth-child(odd){
-
-								}
-
-								&:nth-child(even){
-
-								}
-								img, iframe{
-
-								}
-								&:last-child{
-									border-bottom: none;
-								}
-							}
-							p{
-								margin-top: 0;
-							}
-							.tumblr_body{
-								ol{
-									margin-left: 20px;
-								}
-							}
-							.tumblr_title{
-								//margin-left: ;
-								margin-top: 0px;
-								text-transform: uppercase;
-							}
-							.tumblr_video{
-								margin: 0 0 10px 0;
-								iframe{
-									display: block;
-									margin: 0 auto;
-									width: 100%;
-								}
-							}
-							.tumblr_caption{
-								p{
-									font-style: italic;
-									margin-bottom: 0;
-								}
-							}
-							.tumblr_source{
-								font-style: italic;
-
-								&:before{
-									content: "-";
-								}
-							}
-						}
-					}
-				}
-				&#gemeenteraadsverkiezing{
-					box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
-					background-color: #FFF;
-					a{
-						color: rgba(64,144,206, 1);
-						text-decoration: none;
-						&:hover{
-							text-decoration: underline;
-						}
-						&:visited{
-							color: rgba(64,144,206, 1);
-						}
-					}
-					img{
-						display: none;
-					}
-					.barak{
-						border: 1px solid #ccc;
-						margin-bottom: 20px;
-						box-shadow: 0px 3px 6px #aaa;
-
-						h3{
-							background: url(../img/header.png);
-							text-align: center;
-							color: white;
-							margin: 0;
-							padding: 10px 0;
-							font-family: BreeSerif;
-						}
-						p{
-							padding: 10px;
-						}
-					}
-					#inleiding{
-						h3{
-							font-family: BreeSerif;
-							color: rgba(126,176,204,1);
-						}
-					}
-				}
-				&#overmij{
-					img{
-						display: none;
-					}
-				}
-				&#contact{
-					p{
-						margin-left: 10px;
-						padding-left: 45px;
-						background-image: url(../img/contact_sprite@2x.png);
-						background-repeat: no-repeat;
-						background-size: 26px;
-						height: 28px;
-						line-height: 28px;
-						a{
-							text-decoration: none;
-							color: #222;
-							&:visited{
-								color: #222;
-							}
-						}
-						&:nth-child(2){
-							background-position: 0 0;
-						}
-						&:nth-child(3){
-							background-position: 0 -42px;
-						}
-						&:nth-child(4){
-							background-position: 0 -88px;
-						}
-						&:nth-child(5){
-							background-position: 0 -140px;
-						}
-						&:nth-child(6){
-							background-position: 0 -186px;
-						}
-						&:nth-child(7){
-							background-position: 0 -232px;
-						}
-						&:nth-child(8){
-							background-position: 0 -278px;
-						}
-					}
-				}
 			} /* eo article */
 		} /* eo main */
 		aside{
 			display: none;
 		}
 	} /* eo wrapper */ 
+	.home{
+		#main{
+			background-color: white;
+			article{
+				h2{
+					padding: 10px 20px;
+				}
+				#tumblr{
+					ol{
+						padding-left: 0;
+						margin-top: 0;
+						li.tumblr_post{
+							list-style: none;
+							border-bottom: 1px solid #DDD;
+							padding: 20px;
+							&:first-child{
+								padding-top: 0;
+							}
+							&:nth-child(odd){
+
+							}
+
+							&:nth-child(even){
+
+							}
+							img, iframe{
+
+							}
+							&:last-child{
+								border-bottom: none
+							}
+						}
+						p{
+							margin-top: 0;
+						}
+						.tumblr_body{
+							ol{
+								margin-left: 20px;
+							}
+							p:last-child{
+								margin-bottom: 0;
+							}
+						}
+						.tumblr_title{
+							margin-top: 0px;
+							text-transform: uppercase;
+						}
+						.tumblr_video{
+							margin: 0 0 10px 0;
+							iframe{
+								display: block;
+								margin: 0 auto;
+								width: 100%;
+							}
+						}
+						.tumblr_caption{
+							p{
+								font-style: italic;
+								margin-bottom: 0;
+							}
+						}
+						.tumblr_source{
+							font-style: italic;
+
+							&:before{
+								content: "-";
+							}
+						}
+					}
+				}
+			}
+		}
+		aside{
+
+		}
+	}
+	.gemeenteraadsverkiezing{
+		#main{
+			article{
+				padding: 20px 25px 20px 20px;
+				background-color: white;
+				a{
+					color: rgba(64,144,206, 1);
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+					&:visited{
+						color: rgba(64,144,206, 1);
+					}
+				}
+				img{
+					display: none;
+				}
+
+				// #inleiding{
+				// 	h3{
+				// 		font-family: BreeSerif;
+				// 		color: rgba(126,176,204,1);
+				// 	}
+				// }
+
+				&.barak{
+					padding: 0;
+					background-color: white;
+					h3{
+						background: url(../img/header.png);
+						text-align: center;
+						color: white;
+						margin: 0;
+						padding: 10px 0;
+						font-family: BreeSerif;
+						&::selection { background: #DDD; color: #FFF; text-shadow: none; }
+					}
+					p{
+						padding: 0 25px 0 20px;
+					}
+				}
+			}
+		}
+		aside{
+			
+		}
+	}
+	.overmij{
+		#main{
+			background-color: white;
+			box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+			article{
+				margin: 20px 25px 20px 20px;
+				img{
+					display: none;
+				}
+			}
+		}
+		aside{
+			
+		}
+	}
+	.contact{
+		#main{
+			background-color: white;
+			box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+			article{
+				margin: 20px 25px 20px 20px;
+				p{
+					margin-left: 0px;
+					padding-left: 45px;
+					background-image: url(../img/contact_sprite@2x.png);
+					background-repeat: no-repeat;
+					background-size: 26px;
+					height: 28px;
+					line-height: 28px;
+					a{
+						text-decoration: none;
+						color: #222;
+						&:visited{
+							color: #222;
+						}
+					}
+					&:nth-child(2){
+						background-position: 0 0;
+					}
+					&:nth-child(3){
+						background-position: 0 -42px;
+					}
+					&:nth-child(4){
+						background-position: 0 -88px;
+					}
+					&:nth-child(5){
+						background-position: 0 -140px;
+					}
+					&:nth-child(6){
+						background-position: 0 -186px;
+					}
+					&:nth-child(7){
+						background-position: 0 -232px;
+					}
+					&:nth-child(8){
+						background-position: 0 -278px;
+					}
+				}
+			}
+		}
+		aside{
+			
+		}
+	}
 } /* eo main-contianer */
 
 #footer-container{
-	//margin-top: -150px;
+	background: url('../img/header.png');
+	//margin-top: -109px;
 	clear: both;
 	position: relative;
 	footer{
@@ -442,9 +416,11 @@ body{
 			text-align: center;
 			display: inline-block;
 			cursor: default;
+			&::selection { background: #DDD; color: #FFF; text-shadow: none; }
 			a{
 				color: white;
 				text-decoration: none;
+				&::selection { background: #DDD; color: #FFF; text-shadow: none; }
 			}
 		}
 		#social-icons{
@@ -483,6 +459,10 @@ body{
 	} /* eo footer */
 } /* eo footer container */
 
+// @media only screen and (min-device-width: 321px) and (max-device-width: 480px){
+// 	height: 45px;
+// }
+
 @media (min-width: 321px) and (max-width: 480px) {
 
 	.header-container{
@@ -500,8 +480,8 @@ body{
 			nav{
 				height: 40px;
 				float: right;
-				width: 225px;
-				margin-right: 10%;
+				width: 195px;
+				margin: 0 5% 0 0;
 
 				ul {
 					display: none;
@@ -516,7 +496,7 @@ body{
 	}
 
 	#main-container{
-		#wrapper{
+		.wrapper{
 			#main{
 				article{
 					&#home{
@@ -533,6 +513,7 @@ body{
 									&:nth-child(even){
 
 									}
+
 									img, iframe{
 
 									}
@@ -614,56 +595,120 @@ body{
 			}
 		}
 	}
-
 	#main-container{
-
-		#wrapper{
+		.wrapper{
 			width: 90%;
 			margin: 0 auto;
-
+			padding-top: 58px;
 			#main{
-
 				article{
-					margin-top: 80px;
+					#tumblr{
+						ol{
+							li.tumblr_post{	
+								border-bottom: none;
+								margin: 10px 0;
+								box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+								background-color: #FFF;
+								&:nth-child(odd){
 
-					&#home{
-					}
+								}
 
-					&#gemeenteraadsverkiezing{
+								&:nth-child(even){
 
-						#verkiezing-tekst{
-							width: 45%;
-						}
-						#jongvld{
-							display: block;
-							float: right;
-							margin-top: 50px;
-							width: 256px;
-						}
-						#postit{
-							margin-bottom: 20px;
-						}
-						.postit{
-							display: inline-block;
-							width: 47%;
-						}
-					}
+								}
+								&:first-child{
+									padding-top: 20px;
+								}
+								img, iframe{
 
-					&#overmij{
-						//margin-top: 60px;
-						img{
-							display: block;
-							float: left;
-							margin: 10px 20px 0 0;
-							width: 121px;
-						}
-					}
+								}
+								&:last-child{
+								}
+							}
+							.tumblr_body{
+								ol{
 
-					&#contact{
-						//margin-top: 60px;
+								}
+							}
+							.tumblr_title{
+
+							}
+							.tumblr_video{
+								iframe{
+
+								}
+							}
+							.tumblr_caption{
+								p{
+
+								}
+							}
+							.tumblr_source{
+
+								&:before{
+
+								}
+							}
+						}
 					}
 				}	
 			}	
+		}
+		.home{
+			#main{
+				background-color: rgba(0,0,0,0);
+				article{
+					h2{
+						box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+						background-color: white;
+					}
+				}
+			}
+		}
+		.gemeenteraadsverkiezing{
+			#main{
+				article{
+					box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+					border: 1px solid #ccc;
+					background-color: white;
+					margin-bottom: 10px;
+					#verkiezing-tekst{
+						width: 45%;
+					}
+					#jongvld{
+						display: block;
+						float: right;
+						margin: 20px 0 0 15px;
+						width: 256px;
+					}
+					#postit{
+						margin-bottom: 20px;
+					}
+					.postit{
+						display: inline-block;
+						width: 47%;
+					}
+				}
+			}
+		}
+		.overmij{
+			#main{
+				article{
+					img{
+						display: block;
+						float: left;
+						margin: 10px 20px 0 0;
+						width: 121px;
+					}
+				}
+			}
+		}
+		.contact{
+			#main{
+				article{
+
+				}
+			}
 		}
 	}
 }
@@ -680,7 +725,6 @@ body{
 				font-size: 26px;
 			}
 		}
-
 		nav{
 			width: 240px;
 		}
@@ -709,36 +753,60 @@ body{
 	}
 	#main-container{
 		height: 100%;
-
-		#wrapper{
+		.home{
+			padding-top: 0;
+			#main{
+				article{
+					margin-top: 10px;
+					img{
+						max-width: 100%;
+					}
+				}
+			}
+			aside{
+				margin-top: 20px;
+			}
+		}
+		.gemeenteraadsverkiezing{
+			#main{
+				article{
+					//margin-top: 80px;
+				}
+			}
+			aside{
+				margin-top: 20px;
+			}
+		}
+		.overmij{
+			#main{
+				article{
+					//margin-top: 80px;
+				}
+			}
+			aside{
+				margin-top: 20px;
+			}
+		}
+		.contact{
+			#main{
+				article{
+					//margin-top: 80px;
+				}
+			}
+			aside{
+				margin-top: 20px;
+			}
+		}
+		.wrapper{
 
 			#main{
 				width: 70%;
 				float: left;
-				article{
-
-					&#home{
-
-						margin-top: 20px;
-						img{
-							max-width: 100%;
-						}
-					}
-
-					&#gemeenteraadsverkiezing, &#overmij, &#contact{
-						margin-top: 80px;
-					}
-				}
-
-				section{ 
-					
-				}
 			}
 			aside{
 				display: block;
 				float: right;
 				width: 25%;
-				margin-top: 100px;
 				ul{
 					margin: 0;
 					padding: 0;
@@ -897,7 +965,7 @@ body{
 	}
 	#main-container{
 
-		#wrapper{
+		.wrapper{
 			width: 1026px;
 			.barak{
 				width: 49%;

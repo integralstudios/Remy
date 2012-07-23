@@ -224,7 +224,7 @@ td {
 
 @font-face {
   font-family: Century_Gothic_Bold;
-  src: url(../fonts/Century_Gothic_Bold.ttf); }
+  src: url(../fonts/Century_Gothic_Bold.ttf) format("truetype"); }
 
 html {
   height: 100%; }
@@ -298,7 +298,8 @@ body {
           background-position: -172px 8px; }
       .header-container header nav select {
         margin-top: 5px;
-        display: inline-block; }
+        display: inline-block;
+        font-weight: lighter; }
 
 #picture {
   display: none; }
@@ -307,125 +308,133 @@ body {
   background: url("../img/pattern.png") repeat-x 0 0;
   display: block;
   /* eo wrapper */ }
-  #main-container #wrapper {
+  #main-container .wrapper {
     width: 100%;
     /* eo main */ }
-    #main-container #wrapper #main {
+    #main-container .wrapper #main {
       font-family: Century_Gothic, Helvetica;
       font-weight: lighter;
       font-size: 14px;
       /* eo article */ }
-      #main-container #wrapper #main article {
-        margin: 20px 0; }
-        #main-container #wrapper #main article h2 {
-          font-family: BreeSerif;
-          font-size: 1.5em;
+      #main-container .wrapper #main article h2 {
+        font-family: BreeSerif;
+        font-size: 1.5em;
+        color: #4090ce;
+        margin: 0px; }
+        #main-container .wrapper #main article h2::selection {
+          background: #DDD;
           color: #4090ce;
-          margin: 0px; }
-          #main-container #wrapper #main article h2::selection {
-            background: #DDD;
-            color: #4090ce;
-            text-shadow: none; }
-        #main-container #wrapper #main article#gemeenteraadsverkiezing, #main-container #wrapper #main article#overmij, #main-container #wrapper #main article#contact {
-          margin-left: 20px;
-          margin-right: 20px; }
-        #main-container #wrapper #main article#home h2 {
-          padding: 15px 0 10px 20px;
-          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
-          background-color: #FFF; }
-        #main-container #wrapper #main article#home #tumblr ol {
-          padding-left: 0;
-          margin-top: 0; }
-          #main-container #wrapper #main article#home #tumblr ol li.tumblr_post {
-            list-style: none;
-            padding: 20px 30px 20px 30px;
-            margin: 10px 0;
-            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
-            background-color: #FFF; }
-            #main-container #wrapper #main article#home #tumblr ol li.tumblr_post:last-child {
-              border-bottom: none; }
-          #main-container #wrapper #main article#home #tumblr ol p {
-            margin-top: 0; }
-          #main-container #wrapper #main article#home #tumblr ol .tumblr_body ol {
-            margin-left: 20px; }
-          #main-container #wrapper #main article#home #tumblr ol .tumblr_title {
-            margin-top: 0px;
-            text-transform: uppercase; }
-          #main-container #wrapper #main article#home #tumblr ol .tumblr_video {
-            margin: 0 0 10px 0; }
-            #main-container #wrapper #main article#home #tumblr ol .tumblr_video iframe {
-              display: block;
-              margin: 0 auto;
-              width: 100%; }
-          #main-container #wrapper #main article#home #tumblr ol .tumblr_caption p {
-            font-style: italic;
-            margin-bottom: 0; }
-          #main-container #wrapper #main article#home #tumblr ol .tumblr_source {
-            font-style: italic; }
-            #main-container #wrapper #main article#home #tumblr ol .tumblr_source:before {
-              content: "-"; }
-        #main-container #wrapper #main article#gemeenteraadsverkiezing {
-          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
-          background-color: #FFF; }
-          #main-container #wrapper #main article#gemeenteraadsverkiezing a {
-            color: #4090ce;
-            text-decoration: none; }
-            #main-container #wrapper #main article#gemeenteraadsverkiezing a:hover {
-              text-decoration: underline; }
-            #main-container #wrapper #main article#gemeenteraadsverkiezing a:visited {
-              color: #4090ce; }
-          #main-container #wrapper #main article#gemeenteraadsverkiezing img {
-            display: none; }
-          #main-container #wrapper #main article#gemeenteraadsverkiezing .barak {
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
-            box-shadow: 0px 3px 6px #aaa; }
-            #main-container #wrapper #main article#gemeenteraadsverkiezing .barak h3 {
-              background: url(../img/header.png);
-              text-align: center;
-              color: white;
-              margin: 0;
-              padding: 10px 0;
-              font-family: BreeSerif; }
-            #main-container #wrapper #main article#gemeenteraadsverkiezing .barak p {
-              padding: 10px; }
-          #main-container #wrapper #main article#gemeenteraadsverkiezing #inleiding h3 {
-            font-family: BreeSerif;
-            color: #7eb0cc; }
-        #main-container #wrapper #main article#overmij img {
-          display: none; }
-        #main-container #wrapper #main article#contact p {
-          margin-left: 10px;
-          padding-left: 45px;
-          background-image: url(../img/contact_sprite@2x.png);
-          background-repeat: no-repeat;
-          background-size: 26px;
-          height: 28px;
-          line-height: 28px; }
-          #main-container #wrapper #main article#contact p a {
-            text-decoration: none;
-            color: #222; }
-            #main-container #wrapper #main article#contact p a:visited {
-              color: #222; }
-          #main-container #wrapper #main article#contact p:nth-child(2) {
-            background-position: 0 0; }
-          #main-container #wrapper #main article#contact p:nth-child(3) {
-            background-position: 0 -42px; }
-          #main-container #wrapper #main article#contact p:nth-child(4) {
-            background-position: 0 -88px; }
-          #main-container #wrapper #main article#contact p:nth-child(5) {
-            background-position: 0 -140px; }
-          #main-container #wrapper #main article#contact p:nth-child(6) {
-            background-position: 0 -186px; }
-          #main-container #wrapper #main article#contact p:nth-child(7) {
-            background-position: 0 -232px; }
-          #main-container #wrapper #main article#contact p:nth-child(8) {
-            background-position: 0 -278px; }
-    #main-container #wrapper aside {
+          text-shadow: none; }
+    #main-container .wrapper aside {
       display: none; }
+  #main-container .home #main {
+    background-color: white; }
+    #main-container .home #main article h2 {
+      padding: 10px 20px; }
+    #main-container .home #main article #tumblr ol {
+      padding-left: 0;
+      margin-top: 0; }
+      #main-container .home #main article #tumblr ol li.tumblr_post {
+        list-style: none;
+        border-bottom: 1px solid #DDD;
+        padding: 20px; }
+        #main-container .home #main article #tumblr ol li.tumblr_post:first-child {
+          padding-top: 0; }
+        #main-container .home #main article #tumblr ol li.tumblr_post:last-child {
+          border-bottom: none; }
+      #main-container .home #main article #tumblr ol p {
+        margin-top: 0; }
+      #main-container .home #main article #tumblr ol .tumblr_body ol {
+        margin-left: 20px; }
+      #main-container .home #main article #tumblr ol .tumblr_body p:last-child {
+        margin-bottom: 0; }
+      #main-container .home #main article #tumblr ol .tumblr_title {
+        margin-top: 0px;
+        text-transform: uppercase; }
+      #main-container .home #main article #tumblr ol .tumblr_video {
+        margin: 0 0 10px 0; }
+        #main-container .home #main article #tumblr ol .tumblr_video iframe {
+          display: block;
+          margin: 0 auto;
+          width: 100%; }
+      #main-container .home #main article #tumblr ol .tumblr_caption p {
+        font-style: italic;
+        margin-bottom: 0; }
+      #main-container .home #main article #tumblr ol .tumblr_source {
+        font-style: italic; }
+        #main-container .home #main article #tumblr ol .tumblr_source:before {
+          content: "-"; }
+  #main-container .gemeenteraadsverkiezing #main article {
+    padding: 20px 25px 20px 20px;
+    background-color: white; }
+    #main-container .gemeenteraadsverkiezing #main article a {
+      color: #4090ce;
+      text-decoration: none; }
+      #main-container .gemeenteraadsverkiezing #main article a:hover {
+        text-decoration: underline; }
+      #main-container .gemeenteraadsverkiezing #main article a:visited {
+        color: #4090ce; }
+    #main-container .gemeenteraadsverkiezing #main article img {
+      display: none; }
+    #main-container .gemeenteraadsverkiezing #main article.barak {
+      padding: 0;
+      background-color: white; }
+      #main-container .gemeenteraadsverkiezing #main article.barak h3 {
+        background: url(../img/header.png);
+        text-align: center;
+        color: white;
+        margin: 0;
+        padding: 10px 0;
+        font-family: BreeSerif; }
+        #main-container .gemeenteraadsverkiezing #main article.barak h3::selection {
+          background: #DDD;
+          color: #FFF;
+          text-shadow: none; }
+      #main-container .gemeenteraadsverkiezing #main article.barak p {
+        padding: 0 25px 0 20px; }
+  #main-container .overmij #main {
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25); }
+    #main-container .overmij #main article {
+      margin: 20px 25px 20px 20px; }
+      #main-container .overmij #main article img {
+        display: none; }
+  #main-container .contact #main {
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25); }
+    #main-container .contact #main article {
+      margin: 20px 25px 20px 20px; }
+      #main-container .contact #main article p {
+        margin-left: 0px;
+        padding-left: 45px;
+        background-image: url(../img/contact_sprite@2x.png);
+        background-repeat: no-repeat;
+        background-size: 26px;
+        height: 28px;
+        line-height: 28px; }
+        #main-container .contact #main article p a {
+          text-decoration: none;
+          color: #222; }
+          #main-container .contact #main article p a:visited {
+            color: #222; }
+        #main-container .contact #main article p:nth-child(2) {
+          background-position: 0 0; }
+        #main-container .contact #main article p:nth-child(3) {
+          background-position: 0 -42px; }
+        #main-container .contact #main article p:nth-child(4) {
+          background-position: 0 -88px; }
+        #main-container .contact #main article p:nth-child(5) {
+          background-position: 0 -140px; }
+        #main-container .contact #main article p:nth-child(6) {
+          background-position: 0 -186px; }
+        #main-container .contact #main article p:nth-child(7) {
+          background-position: 0 -232px; }
+        #main-container .contact #main article p:nth-child(8) {
+          background-position: 0 -278px; }
 
 /* eo main-contianer */
 #footer-container {
+  background: url("../img/header.png");
   clear: both;
   position: relative;
   /* eo footer */ }
@@ -440,9 +449,17 @@ body {
       text-align: center;
       display: inline-block;
       cursor: default; }
+      #footer-container footer p::selection {
+        background: #DDD;
+        color: #FFF;
+        text-shadow: none; }
       #footer-container footer p a {
         color: white;
         text-decoration: none; }
+        #footer-container footer p a::selection {
+          background: #DDD;
+          color: #FFF;
+          text-shadow: none; }
     #footer-container footer #social-icons {
       text-align: center;
       padding: 0;
@@ -483,15 +500,15 @@ body {
       .header-container header nav {
         height: 40px;
         float: right;
-        width: 225px;
-        margin-right: 10%; }
+        width: 195px;
+        margin: 0 5% 0 0; }
         .header-container header nav ul {
           display: none; }
         .header-container header nav select {
           margin-top: 5px;
           display: inline-block; }
 
-  #main-container #wrapper #main article#home #tumblr ol .tumblr_video iframe {
+  #main-container .wrapper #main article#home #tumblr ol .tumblr_video iframe {
     width: 300px; } }
 @media only screen and (min-width: 481px) {
   .header-container {
@@ -527,28 +544,44 @@ body {
       .header-container header nav select {
         display: none; }
 
-  #main-container #wrapper {
+  #main-container .wrapper {
     width: 90%;
-    margin: 0 auto; }
-    #main-container #wrapper #main article {
-      margin-top: 80px; }
-      #main-container #wrapper #main article#gemeenteraadsverkiezing #verkiezing-tekst {
-        width: 45%; }
-      #main-container #wrapper #main article#gemeenteraadsverkiezing #jongvld {
-        display: block;
-        float: right;
-        margin-top: 50px;
-        width: 256px; }
-      #main-container #wrapper #main article#gemeenteraadsverkiezing #postit {
-        margin-bottom: 20px; }
-      #main-container #wrapper #main article#gemeenteraadsverkiezing .postit {
-        display: inline-block;
-        width: 47%; }
-      #main-container #wrapper #main article#overmij img {
-        display: block;
-        float: left;
-        margin: 10px 20px 0 0;
-        width: 121px; } }
+    margin: 0 auto;
+    padding-top: 58px; }
+    #main-container .wrapper #main article #tumblr ol li.tumblr_post {
+      border-bottom: none;
+      margin: 10px 0;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+      background-color: #FFF; }
+      #main-container .wrapper #main article #tumblr ol li.tumblr_post:first-child {
+        padding-top: 20px; }
+  #main-container .home #main {
+    background-color: rgba(0, 0, 0, 0); }
+    #main-container .home #main article h2 {
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+      background-color: white; }
+  #main-container .gemeenteraadsverkiezing #main article {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-bottom: 10px; }
+    #main-container .gemeenteraadsverkiezing #main article #verkiezing-tekst {
+      width: 45%; }
+    #main-container .gemeenteraadsverkiezing #main article #jongvld {
+      display: block;
+      float: right;
+      margin: 20px 0 0 15px;
+      width: 256px; }
+    #main-container .gemeenteraadsverkiezing #main article #postit {
+      margin-bottom: 20px; }
+    #main-container .gemeenteraadsverkiezing #main article .postit {
+      display: inline-block;
+      width: 47%; }
+  #main-container .overmij #main article img {
+    display: block;
+    float: left;
+    margin: 10px 20px 0 0;
+    width: 121px; } }
 @media only screen and (min-width: 768px) {
   #header-container {
     box-shadow: none; }
@@ -583,37 +616,44 @@ body {
   #main-container {
     height: 100%;
     /* eo wrapper */ }
-    #main-container #wrapper {
+    #main-container .home {
+      padding-top: 0; }
+      #main-container .home #main article {
+        margin-top: 10px; }
+        #main-container .home #main article img {
+          max-width: 100%; }
+      #main-container .home aside {
+        margin-top: 20px; }
+    #main-container .gemeenteraadsverkiezing aside {
+      margin-top: 20px; }
+    #main-container .overmij aside {
+      margin-top: 20px; }
+    #main-container .contact aside {
+      margin-top: 20px; }
+    #main-container .wrapper {
       /* eo aside */ }
-      #main-container #wrapper #main {
+      #main-container .wrapper #main {
         width: 70%;
         float: left; }
-        #main-container #wrapper #main article#home {
-          margin-top: 20px; }
-          #main-container #wrapper #main article#home img {
-            max-width: 100%; }
-        #main-container #wrapper #main article#gemeenteraadsverkiezing, #main-container #wrapper #main article#overmij, #main-container #wrapper #main article#contact {
-          margin-top: 80px; }
-      #main-container #wrapper aside {
+      #main-container .wrapper aside {
         display: block;
         float: right;
         width: 25%;
-        margin-top: 100px;
         /* eo ul */
         /* eo section#feed */ }
-        #main-container #wrapper aside ul {
+        #main-container .wrapper aside ul {
           margin: 0;
           padding: 0;
           width: 100%;
           /* eo li */ }
-          #main-container #wrapper aside ul li {
+          #main-container .wrapper aside ul li {
             display: inline-block;
             padding: 0;
             margin: 0;
             background-size: 160px;
             margin-right: -4px;
             width: 25%; }
-            #main-container #wrapper aside ul li a {
+            #main-container .wrapper aside ul li a {
               display: block;
               margin: 0 auto;
               width: 34px;
@@ -623,61 +663,61 @@ body {
               background-size: 160px;
               background-image: url("../img/social_hover@2x.png"), url("../img/social@2x.png");
               background-repeat: no-repeat; }
-              #main-container #wrapper aside ul li a:hover {
+              #main-container .wrapper aside ul li a:hover {
                 opacity: 1;
                 filter: alpha(opacity=100); }
-            #main-container #wrapper aside ul li:nth-child(1) {
+            #main-container .wrapper aside ul li:nth-child(1) {
               height: 34px; }
-              #main-container #wrapper aside ul li:nth-child(1) a {
+              #main-container .wrapper aside ul li:nth-child(1) a {
                 background-position: 0 0; }
-            #main-container #wrapper aside ul li:nth-child(2) {
+            #main-container .wrapper aside ul li:nth-child(2) {
               height: 34px; }
-              #main-container #wrapper aside ul li:nth-child(2) a {
+              #main-container .wrapper aside ul li:nth-child(2) a {
                 background-position: -42px 0; }
-            #main-container #wrapper aside ul li:nth-child(3) {
+            #main-container .wrapper aside ul li:nth-child(3) {
               height: 34px; }
-              #main-container #wrapper aside ul li:nth-child(3) a {
+              #main-container .wrapper aside ul li:nth-child(3) a {
                 background-position: -84px 0; }
-            #main-container #wrapper aside ul li:nth-child(4) {
+            #main-container .wrapper aside ul li:nth-child(4) {
               height: 34px; }
-              #main-container #wrapper aside ul li:nth-child(4) a {
+              #main-container .wrapper aside ul li:nth-child(4) a {
                 background-position: -126px 0; }
-        #main-container #wrapper aside section#feed {
+        #main-container .wrapper aside section#feed {
           box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
           background-color: white;
           /* eo div#tweets */ }
-          #main-container #wrapper aside section#feed h3 {
+          #main-container .wrapper aside section#feed h3 {
             background: url("../img/header.png");
             color: white;
             padding: 10px 0 5px 20px;
             font-family: BreeSerif;
             margin: 0; }
-            #main-container #wrapper aside section#feed h3::selection {
+            #main-container .wrapper aside section#feed h3::selection {
               background: #DDD;
               color: #FFF;
               text-shadow: none; }
-          #main-container #wrapper aside section#feed div#tweets {
+          #main-container .wrapper aside section#feed div#tweets {
             padding: 0px; }
-            #main-container #wrapper aside section#feed div#tweets article {
+            #main-container .wrapper aside section#feed div#tweets article {
               padding: 10px 20px;
               border-bottom: 1px solid #DDD; }
-              #main-container #wrapper aside section#feed div#tweets article:last-child {
+              #main-container .wrapper aside section#feed div#tweets article:last-child {
                 border-bottom: none; }
-              #main-container #wrapper aside section#feed div#tweets article p {
+              #main-container .wrapper aside section#feed div#tweets article p {
                 margin: 0; }
-              #main-container #wrapper aside section#feed div#tweets article p.date {
+              #main-container .wrapper aside section#feed div#tweets article p.date {
                 font-size: 10px;
                 color: #DDD;
                 line-height: 10px; }
-              #main-container #wrapper aside section#feed div#tweets article section p {
+              #main-container .wrapper aside section#feed div#tweets article section p {
                 font-size: 12px;
                 line-height: 16px;
                 font-weight: lighter;
                 margin-bottom: 2px; }
-              #main-container #wrapper aside section#feed div#tweets article section a {
+              #main-container .wrapper aside section#feed div#tweets article section a {
                 text-decoration: none;
                 color: #4090ce; }
-                #main-container #wrapper aside section#feed div#tweets article section a:hover {
+                #main-container .wrapper aside section#feed div#tweets article section a:hover {
                   text-decoration: underline; }
 
   /* eo main container */
@@ -710,9 +750,9 @@ body {
     .title {
       font-size: 26px; }
 
-  #main-container #wrapper {
+  #main-container .wrapper {
     width: 1026px; }
-    #main-container #wrapper .barak {
+    #main-container .wrapper .barak {
       width: 49%;
       display: inline-block;
       vertical-align: top; }
