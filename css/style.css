@@ -589,7 +589,7 @@ body {
     display: block;
     float: left;
     margin: 10px 20px 0 0;
-    width: 121px; } }
+    width: 257px; } }
 @media only screen and (min-width: 768px) {
   #header-container {
     box-shadow: none; }
@@ -631,7 +631,7 @@ body {
         #main-container .home #main article img {
           max-width: 100%; }
       #main-container .home aside {
-        margin-top: 20px; }
+        margin-top: 10px; }
     #main-container .gemeenteraadsverkiezing {
       padding-top: 0; }
       #main-container .gemeenteraadsverkiezing aside {
@@ -659,19 +659,19 @@ body {
           #main-container .wrapper aside ul li {
             display: inline-block;
             padding: 0;
-            margin: 0;
+            margin: 0 0 15px 0;
             background-size: 160px;
             margin-right: -4px;
             width: 25%; }
             #main-container .wrapper aside ul li a {
               display: block;
               margin: 0 auto;
-              width: 34px;
-              height: 34px;
+              width: 41px;
+              height: 41px;
               opacity: 0.5;
               filter: alpha(opacity=50);
-              background-size: 160px;
-              background-image: url("../img/social_hover@2x.png"), url("../img/social@2x.png");
+              background-size: 241px;
+              background-image: url("../img/social_hover@2x-2.png");
               background-repeat: no-repeat; }
               #main-container .wrapper aside ul li a:hover {
                 opacity: 1;
@@ -683,15 +683,20 @@ body {
             #main-container .wrapper aside ul li:nth-child(2) {
               height: 34px; }
               #main-container .wrapper aside ul li:nth-child(2) a {
-                background-position: -42px 0; }
+                background-position: -50px 0; }
             #main-container .wrapper aside ul li:nth-child(3) {
               height: 34px; }
               #main-container .wrapper aside ul li:nth-child(3) a {
-                background-position: -84px 0; }
+                background-position: -100px 0; }
             #main-container .wrapper aside ul li:nth-child(4) {
               height: 34px; }
               #main-container .wrapper aside ul li:nth-child(4) a {
-                background-position: -126px 0; }
+                background-position: -150px 0; }
+            #main-container .wrapper aside ul li:nth-child(5) {
+              display: none;
+              height: 34px; }
+              #main-container .wrapper aside ul li:nth-child(5) a {
+                background-position: -200px 0; }
         #main-container .wrapper aside section#feed {
           box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
           background-color: white;
@@ -766,6 +771,14 @@ body {
       width: 49%;
       display: inline-block;
       vertical-align: top; }
+    #main-container .wrapper aside {
+      /* eo ul */ }
+      #main-container .wrapper aside ul {
+        /* eo li */ }
+        #main-container .wrapper aside ul li {
+          width: 20%; }
+          #main-container .wrapper aside ul li:nth-child(5) {
+            display: inline-block; }
 
   #picture {
     height: 350px; }
