@@ -231,7 +231,6 @@ body{
 							&:nth-child(odd){
 
 							}
-
 							&:nth-child(even){
 
 							}
@@ -270,13 +269,14 @@ body{
 							font-size: 1.5em;
 							color: rgba(64,144,206, 1);
 							margin-bottom: 5px;
+							&::selection { background: #DDD; color: rgba(64,144,206, 1); text-shadow: none; }
 						}
 						.tumblr_video{
 							margin: 0 0 10px 0;
 							iframe{
 								display: block;
 								margin: 0 auto;
-								width: 100%;
+								// width: 100%;
 							}
 						}
 						.tumblr_caption{
@@ -386,6 +386,19 @@ body{
 					}
 					&:nth-child(2){
 						background-position: 0 0;
+						span{
+							display: none;
+							&:hover{
+								display: block;
+							}
+						}
+						// &:after{
+						// 	display: none;
+						// 	content: " tottototo";
+						// 	&:hover{
+						// 		display: block;
+						// 	}
+						// }
 					}
 					&:nth-child(3){
 						background-position: 0 -42px;
@@ -425,7 +438,7 @@ body{
 		color: white;
 		padding: 0px 0 10px 0px;
 		p{
-			font-size: .8em;
+			font-size: .7em;
 			width: 100%;
 			text-align: center;
 			display: inline-block;
@@ -725,6 +738,13 @@ body{
 			}
 		}
 	}
+	#footer-container{
+		footer{
+			p{
+				font-size: 0.8em;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -993,13 +1013,18 @@ body{
 		}
 	}
 	#main-container{
-
 		.wrapper{
 			width: 1026px;
 			.barak{
 				width: 49%;
 				display: inline-block;
 				vertical-align: top;
+				&:nth-child(2){
+					margin-right: 6px;	
+				}
+				&:nth-child(4){
+					margin-right: 6px;	
+				}
 			}
 			aside{
 				ul{

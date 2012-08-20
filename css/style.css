@@ -359,12 +359,15 @@ body {
         font-size: 1.5em;
         color: #4090ce;
         margin-bottom: 5px; }
+        #main-container .home #main article #tumblr ol .tumblr_title::selection {
+          background: #DDD;
+          color: #4090ce;
+          text-shadow: none; }
       #main-container .home #main article #tumblr ol .tumblr_video {
         margin: 0 0 10px 0; }
         #main-container .home #main article #tumblr ol .tumblr_video iframe {
           display: block;
-          margin: 0 auto;
-          width: 100%; }
+          margin: 0 auto; }
       #main-container .home #main article #tumblr ol .tumblr_caption p {
         font-style: italic;
         margin-bottom: 0; }
@@ -427,6 +430,10 @@ body {
             color: #222; }
         #main-container .contact #main article p:nth-child(2) {
           background-position: 0 0; }
+          #main-container .contact #main article p:nth-child(2) span {
+            display: none; }
+            #main-container .contact #main article p:nth-child(2) span:hover {
+              display: block; }
         #main-container .contact #main article p:nth-child(3) {
           background-position: 0 -42px; }
         #main-container .contact #main article p:nth-child(4) {
@@ -452,7 +459,7 @@ body {
     color: white;
     padding: 0px 0 10px 0px; }
     #footer-container footer p {
-      font-size: .8em;
+      font-size: .7em;
       width: 100%;
       text-align: center;
       display: inline-block;
@@ -589,7 +596,10 @@ body {
     display: block;
     float: left;
     margin: 10px 20px 0 0;
-    width: 257px; } }
+    width: 257px; }
+
+  #footer-container footer p {
+    font-size: 0.8em; } }
 @media only screen and (min-width: 768px) {
   #header-container {
     box-shadow: none; }
@@ -771,6 +781,10 @@ body {
       width: 49%;
       display: inline-block;
       vertical-align: top; }
+      #main-container .wrapper .barak:nth-child(2) {
+        margin-right: 6px; }
+      #main-container .wrapper .barak:nth-child(4) {
+        margin-right: 6px; }
     #main-container .wrapper aside {
       /* eo ul */ }
       #main-container .wrapper aside ul {

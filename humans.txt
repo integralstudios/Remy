@@ -3,41 +3,17 @@
 
 
 /* TEAM */
-  Integral Studios: @artlamb1, @peecken, @vdclouis
+  Integral Studios: @artlamb1, @peecken, @vdclouis & @officemaurice
   Site: http://integralstudios.be
   Twitter: @integralstudios
   Location: Ghent, Belgium
 
-/* THANKS */
-  Names (& URL):
+/* PICTURES */
+  Site: http://www.jefboesphotography.be/
 
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
-  Software: Espresso
 
-
-
-                               -o/-
-                               +oo//-
-                              :ooo+//:
-                             -ooooo///-
-                             /oooooo//:
-                            :ooooooo+//-
-                           -+oooooooo///-
-           -://////////////+oooooooooo++////////////::
-            :+ooooooooooooooooooooooooooooooooooooo+:::-
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-
-                     -:+ooooooooooooooooo+:://////:--
-                       /ooooooooooooooooo+//////:-
-                      -ooooooooooooooooooo////-
-                      /ooooooooo+oooooooooo//:
-                     :ooooooo+/::/+oooooooo+//-
-                    -oooooo/::///////+oooooo///-
-                    /ooo+::://////:---:/+oooo//:
-                   -o+/::///////:-      -:/+o+//-
-                   :-:///////:-            -:/://
-                     -////:-                 --//:
-                       --                       -:
+/* LAST UPDATE */
+  20/08/2012
