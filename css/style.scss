@@ -276,7 +276,7 @@ body{
 							iframe{
 								display: block;
 								margin: 0 auto;
-								// width: 100%;
+								width: 100%;
 							}
 						}
 						.tumblr_caption{
@@ -318,14 +318,6 @@ body{
 				img{
 					display: none;
 				}
-
-				// #inleiding{
-				// 	h3{
-				// 		font-family: BreeSerif;
-				// 		color: rgba(126,176,204,1);
-				// 	}
-				// }
-
 				&.barak{
 					padding: 0;
 					background-color: white;
@@ -356,6 +348,16 @@ body{
 				margin: 20px 25px 20px 20px;
 				img{
 					display: none;
+				}
+				a{
+					color: rgba(64,144,206, 1);
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+					&:visited{
+						color: rgba(64,144,206, 1);
+					}
 				}
 			}
 		}
@@ -523,52 +525,17 @@ body{
 	}
 
 	#main-container{
-		.wrapper{
+		.home{
 			#main{
 				article{
-					&#home{
-						#tumblr{
-							//margin: 0 20px;
-							ol{
+					#tumblr{
+						//margin: 0 20px;
+						ol{
 
-								li{
-	
-									&:nth-child(odd){
-
-									}
-
-									&:nth-child(even){
-
-									}
-
-									img, iframe{
-
-									}
-								}
-
-								p{
-
-								}
-								.tumblr_title{
-
-								}
-								.tumblr_video{
-
-									iframe{
-										width: 300px;
-									}
-								}
-								.tumblr_caption{
-									p{
-
-									}
-								}
-								.tumblr_source{
-
-
-									&:before{
-
-									}
+							.tumblr_video{
+								border: 1px soli;
+								iframe{
+									width: 320px;
 								}
 							}
 						}
@@ -662,7 +629,7 @@ body{
 							}
 							.tumblr_video{
 								iframe{
-
+									width: 320px;
 								}
 							}
 							.tumblr_caption{
