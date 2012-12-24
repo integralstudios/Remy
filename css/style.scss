@@ -488,11 +488,21 @@ body{
 	} /* eo footer */
 } /* eo footer container */
 
+iframe{
+	width: 400px;
+	height: 225px;
+}
+
 // @media only screen and (min-device-width: 321px) and (max-device-width: 480px){
 // 	height: 45px;
 // }
 
 @media (min-width: 321px) and (max-width: 480px) {
+
+	iframe{
+		width: 350px;
+		height: 195px;
+	}
 
 	.header-container{
 		height: 45px;
@@ -547,6 +557,11 @@ body{
 }
 
 @media only screen and (min-width: 481px) {
+
+	iframe{
+		width: 400px;
+		height: 225px;
+	}
 
 	.header-container{
 		position: fixed;
@@ -715,6 +730,11 @@ body{
 }
 
 @media only screen and (min-width: 768px) {
+
+	iframe{
+		width: 445px;
+		height: 250px;
+	}
 
 	#header-container{
 		box-shadow: none;
@@ -969,6 +989,12 @@ body{
 }
 
 @media only screen and (min-width: 1140px) {
+
+	iframe{
+		width: 500px;
+		height: 280px;
+	}
+
 
 	.header-container{
 		header{
